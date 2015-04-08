@@ -1,0 +1,91 @@
+.carousel
+	height						100%
+	list-style					none
+	margin						0
+	overflow					hidden
+	padding						0
+	position					relative
+	width						100%
+
+	&-slides
+		height					100%
+		list-style				none
+		margin					0
+		padding					0
+		transition				0.3s all ease-in-out
+		width					100%
+
+	&-slide
+		background-position		50% 0
+		background-repeat		no-repeat
+		background-size			cover !important
+		display					inline-block
+		height					100%
+		margin-left				-4px
+		vertical-align			top
+		width					100%
+
+		&:first-of-type
+			margin-left			0
+
+		a
+			display				block
+
+			span
+				clip			rect(0 0 0 0)
+				height			1px
+				margin			-1px
+				overflow		hidden
+				position		absolute
+				width			1px
+
+	&-pagination
+		bottom					10px
+		display					none
+		left					10px
+		list-style				none
+		margin					0
+		padding					0
+		position				absolute
+		
+		@media $small-bp
+			display				block
+
+		&-item
+			background-position	50% 0
+			background-repeat 	no-repeat
+			background-size		cover
+			display				inline-block
+			height				66px
+			margin				0 15px 0 0
+			position			relative
+			width				66px
+			
+			&.active
+				border			2px solid $blue
+				
+			a
+				bottom			0
+				height			100%
+				left			0
+				position		absolute
+				right			0
+				top				0
+				width			100%
+				
+	&-navigation
+		background				url(../images/banner-module/left-arrow.png) no-repeat 0 0
+		border					none
+		box-shadow				none
+		cursor					pointer
+		height					32px
+		left					10px
+		margin-top				-16px
+		position				absolute
+		top						50%
+		width					19px
+		
+		&-next
+			background			url(../images/banner-module/right-arrow.png) no-repeat 0 0
+			left				auto
+			right				10px

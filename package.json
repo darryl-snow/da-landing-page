@@ -1,8 +1,8 @@
 {
-  "name": "project-template",
-  "version": "0.0.0",
+  "name": "DA-landing-page",
+  "version": "0.0.1",
   "main": "index.html",
-  "description": "Front-End templates for Project",
+  "description": "Direct Asia Landing Page",
   "keywords": "",
   "dependencies": {},
   "devDependencies": {

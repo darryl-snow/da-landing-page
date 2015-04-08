@@ -1,0 +1,126 @@
+.banner-module
+	clearfix()
+	height					970px
+	font-family				"Mic32Normal", sans-serif
+	margin					0 auto 25px auto
+	max-width				100%
+	overflow				hidden
+	width					510px
+	
+	@media $small-bp
+		height				485px
+		max-width			none
+		width				1075px
+
+	*
+		box-sizing			border-box
+
+	&-images,
+	&-details
+		max-width			100%
+		overflow			hidden
+		
+		@media $small-bp
+			float			left
+			max-width		none
+
+	&-images
+		height				355px
+		width				100%
+		
+		@media $small-bp
+			height			100%
+			width			675px
+
+	&-details
+		background			$blue url(../images/banner-module/blue-background.gif) repeat 0 0
+		color				$white
+		font-size			20px
+		height				auto
+		padding				15px
+		text-shadow			0 2px 2px rgba($black, 0.3)
+		width				100%
+		
+		@media $small-bp
+			height			100%
+			padding			30px
+			width			400px
+
+		h1
+			font-family		"Mic32Medium", sans-serif
+			font-size		50px
+			line-height		1
+			margin			0 0 50px 0
+			text-transform	uppercase
+
+		.subheading
+			font-family		"Mic32Light", sans-serif
+			font-size		28px
+			font-weight		300
+			margin-top		5px
+			text-transform	none
+
+		a
+			text-decoration	none
+
+		.link
+			color			$yellow
+			display			block
+			text-decoration	none
+
+		.tel
+			color			$white
+			display			inline
+
+		p
+			font-family		"Mic32Light", sans-serif
+			margin			5px 0 5px 0
+
+		.small
+			display			block
+			font-size		16px
+			margin-top		0
+
+	&-list
+		list-style			none
+		margin				0
+		padding				0
+		
+		li
+			margin			0 0 20px 0
+			padding			0
+			
+			&:last-child
+				margin-bottom	0
+
+	&-list-left
+		display				inline-block
+		vertical-align		top
+		width				58px
+
+	&-list-right
+		display				inline-block
+		vertical-align		top
+		width				276px
+
+	&-button
+		background			$yellow
+		border				none
+		box-shadow			none
+		color				$black
+		cursor				pointer
+		font-family			"Mic32Medium", sans-serif
+		font-size			20px
+		padding				15px 20px
+		text-decoration		none
+		text-shadow			none
+		text-transform		uppercase
+
+	&-icon
+		display				inline-block
+		height				20px
+		vertical-align		middle
+		width				20px
+
+		&-right-arrow
+			background		url(../images/banner-module/icon-arrow-right.gif) no-repeat 50% 0

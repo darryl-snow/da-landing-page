@@ -45,7 +45,7 @@ gulp.task "coffeescript", ->
 		# 		path: Config.src + "lib/jquery/dist/jquery.js"
 		# 		exports: "$"
 	.pipe plugins.if Config.publish, plugins.uglify()
-	.pipe plugins.rename "main.js"
+	.pipe plugins.rename "banner-module.js"
 	.pipe plugins.header "/* " + Config.name + " : " + Config.version + " : " + new Date() + " */"
 	.pipe plugins.size
 		showFiles: true
@@ -59,7 +59,7 @@ gulp.task "stylus", ->
 	.pipe plugins.stylus()
 	.pipe plugins.autoprefixer "last 1 version", "> 1%"
 	.pipe plugins.if Config.publish, plugins.minifyCss()
-	.pipe plugins.rename "main.css"
+	.pipe plugins.rename "banner-module.css"
 	.pipe plugins.header "/* " + Config.name + " : " + Config.version + " : " + new Date() + " */"
 	.pipe plugins.size
 		showFiles: true
@@ -140,6 +140,21 @@ gulp.task "copy-files", ->
 	gulp.src Config.src + "images/*.xml"
 	.pipe gulp.dest Config.build + "images"
 
+	gulp.src Config.src + "direct-asia-code/*.css"
+	.pipe gulp.dest Config.build + "styles"
+
+	gulp.src Config.src + "direct-asia-code/*.js"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "direct-asia-code/*.html"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "direct-asia-code/*.axd"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "direct-asia-code/*.aspx"
+	.pipe gulp.dest Config.build + "scripts"
+
 	# gulp.src Config.src + "sitemap.xml"
 	# .pipe gulp.dest Config.build
 
@@ -169,7 +184,7 @@ gulp.task "server", ->
 	app.listen Config.port
 	lr.listen 35729
 	setTimeout ->
-		open "http://localhost:" + Config.port + "/styleguide.html"
+		open "http://localhost:" + Config.port + "/demo-page.html"
 	, 3000
 
 # Update the livereload server
@@ -184,7 +199,7 @@ notifyLivereload = (event) ->
 
 gulp.task "default", ->
 	Config.publish = false
-	run ["coffeescript", "stylus", "jade", "images", "copy-files"], "critical", "watch", "server"
+	run ["coffeescript", "stylus", "jade", "images", "copy-files"], "watch", "server"
 
 gulp.task "deploy", ->
 	Config.publish = true
@@ -193,4 +208,3 @@ gulp.task "deploy", ->
 	run "jade"
 	run "images"
 	run "copy-files"
-	run "critical"

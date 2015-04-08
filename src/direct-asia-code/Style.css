@@ -1,0 +1,4724 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	-webkit-text-size-adjust: none;
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background-color: #FCD900;
+	line-height: 130%;
+}
+li {
+	padding: 0px 0px 10px 0px;
+}
+td, th, div, span, input, textarea {
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+}
+#menu {
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 18px;
+}
+#menu li {
+	list-style-type:inherit;
+}
+#menualpha {
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 50px;
+}
+#menualpha li {
+	list-style-type:lower-alpha;
+}
+.tblGrid {
+ 	border-collapse: collapse;
+	border: solid 1px #BBBBBB;
+}
+.tblGrid td {
+	border: 1px solid #BBBBBB;
+	border-collapse: collapse;
+}
+td .dataColumn {
+	padding-left:10px;
+	padding-right:10px;
+}
+.lineBreak {
+/*background-image:url(../images/lineBreak.gif);
+	background-repeat:repeat-x;
+	height:5px;	
+	width: 100%;*/
+}
+.tdBottomBorder {
+	border-bottom:solid 1px #999999;
+	padding-bottom:3px;
+}
+.tdBottomBorder5 {
+	border-bottom:solid 1px #999999;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.ParagraphSpace5 {
+	height:5px;
+}
+.ParagraphSpace10 {
+	height:10px;
+}
+.ParagraphSpace20 {
+	height:20px;
+}
+.wrapper {
+	width: 100%;
+	text-align: -moz-center;
+ !text-align:center;
+	padding: 0px 0px 0px 0px;
+	min-height:600px;
+}
+.container {
+	width: 98%;
+	text-align: -moz-center;
+ 	text-align:center;
+	margin: 0px auto;
+}
+.container_signin {
+	width: 600px;
+	text-align: -moz-center;
+ 	text-align:center;
+	margin: 0px auto;
+	padding-top: 200px;
+}
+.content {
+	width: 985px;
+	background-color: #FFFFFF;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.content a {
+	color: #08C
+}
+#tblFooter {
+	color: #626262;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+.contentPopup {
+	width: 850px;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+.hidden {
+	display:none;
+	visibility:hidden;
+}
+.modalBackground {
+	background-color:#111;
+	filter:alpha(opacity=60);
+	opacity:0.60;
+}
+.modalPopupBox {
+	background-color: White;
+	margin:0px;
+	padding:0 10px;
+	width:450px;
+	font-size: 12px;
+	overflow:visible;
+	border: 15px solid #444;
+	border-radius: 20px;
+}
+.modalPopupEmail {
+	background-color:Transparent;
+	margin:0px;
+	padding:0px;
+	width:450px;
+	font-size: 12px;
+	overflow:visible;
+}
+.modalPopupQualifyQ {
+	background-color:Transparent;
+	margin:0px;
+	padding:0px;
+	width:650px;
+	font-size: 12px;
+	overflow:visible;
+}
+.modalPopupLoading {
+	background-color: Transparent;
+	margin:0px;
+	padding:20px;
+	width:100px;
+	font-size: 12px;
+	overflow:visible;
+}
+.modalPopupLoading .loading {
+	display:none;
+}
+.modalPopupIframeBody {
+	padding: 0;
+	margin: 0;
+	background-color:Transparent;
+}
+.modalMessageHeader {
+}
+.modalErrorCode {
+	text-align:right;
+	font-size: 10px;
+	padding-right: 5px;
+	height: 15px;
+}
+.modalIFHeader {
+	background-color: Transparent;
+	padding: 0px;
+}
+.modalIFHeader .left {
+	background-image:url(../images/frame_grid_Top1_1.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	height:33px;
+	width:9px;
+	font-size:1px;
+}
+.modalIFHeader .middle {
+	background-image:url(../images/frame_grid_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:33px;
+	font-size:1px;
+	padding: 0px;
+}
+.modalIFHeader .right {
+	background-image:url(../images/frame_grid_Top1_3.gif);
+	background-repeat:no-repeat;
+	background-position: right;
+	height:33px;
+	width:12px;
+	font-size:1px;
+}
+.hyLogoDirectAsia {
+	margin: 0px 0px 0px 8px;
+	padding: 0px;
+	border: none 0px #fff;
+	line-height: 100%;
+}
+.hyLogoDirectAsia img {
+	border: none 0px #fff;
+}
+a.LogoDirectAsiaLarge {
+	background-image:url(../images/Logo/Logo_DirectAsiaLarge.gif);
+	height:114px;
+	width:301px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	text-decoration: none;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+a.LogoDirectAsia {
+	background-image:url(../images/Logo/logo_DirectAsia.gif);
+	height:90px;
+	width:252px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	text-decoration: none;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+#header img#strapline {
+	margin-left: 50px;
+}
+.buttonSubmit {
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: -608px 0px;
+	border-style: none;
+	cursor:pointer;
+	height: 42px;
+	width: 148px;
+}
+.buttonSave {
+	background-image:url(../images/button.gif);
+	background-position: -608px 0px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:148px;
+}
+.buttonSaveExit {
+	background-image:url(../images/button.gif);
+	background-position: -124px -42px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:124px;
+}
+.buttonEditDetail {
+	background-image:url(../images/btnEditDetail.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:126px;
+}
+.buttonEditDetail:hover {
+	background-image:url(../images/btnEditDetail_rollovr.gif);
+}
+.buttonBuyNow {
+	background-image:url(../images/btnBuyNow.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:113px;
+}
+.buttonBack {
+	/*	background-image:url(../images/btnBack.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:84px;
+*/
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: -248px -42px;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:75px;
+}
+.Car .buttonBack {
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: -248px -42px;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:75px;
+}
+.buttonBackII {
+	background-image:url(../images/btnBackII.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:84px;
+}
+.buttonBackII:hover {
+/*background-image:url(../images/btnBackII_rollovr.gif);*/
+}
+.buttonAmend {
+	background-image:url(../images/btnAmend.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:98px;
+}
+.Car .buttonAmend:hover {
+	background-image:url(../images/btnAmendMotor_Ovr.gif);
+}
+.PA .buttonAmend:hover {
+	background-image:url(../images/btnAmendPA_Ovr.gif);
+}
+.Travel .buttonAmend:hover {
+	background-image:url(../images/btnAmendTravel_Ovr.gif);
+}
+.Home .buttonAmend:hover {
+	background-image:url(../images/btnAmendHome_Ovr.gif);
+}
+.buttonRenew {
+	background-image:url(../images/btnRenew.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:98px;
+}
+.Car .buttonRenew:hover {
+	background-image:url(../images/btnRenewMotor_Ovr.gif);
+}
+.PA .buttonRenew:hover {
+	background-image:url(../images/btnRenewPA_Ovr.gif);
+}
+.Travel .buttonRenew:hover {
+	background-image:url(../images/btnRenewTravel_Ovr.gif);
+}
+.Home .buttonRenew:hover {
+	background-image:url(../images/btnRenewHome_Ovr.gif);
+}
+.buttonDecline {
+	background-image:url(../images/btnDecline.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:98px;
+}
+.Car .buttonDecline:hover {
+	background-image:url(../images/btnDeclineMotor_Ovr.gif);
+}
+.PA .buttonDecline:hover {
+	background-image:url(../images/btnDeclinePA_Ovr.gif);
+}
+.Travel .buttonDecline:hover {
+	background-image:url(../images/btnDeclineTravel_Ovr.gif);
+}
+.Home .buttonDecline:hover {
+	background-image:url(../images/btnDeclineHome_Ovr.gif);
+}
+.buttonDeferPayment {
+	background-image:url(../images/btnDeferPayment.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:150px;
+}
+.Car .buttonDeferPayment:hover {
+	background-image:url(../images/btnDeferPaymentMotor_Ovr.gif);
+}
+.PA .buttonDeferPayment:hover {
+	background-image:url(../images/btnDeferPA.gif);
+}
+.Travel .buttonDeferPayment:hover {
+	background-image:url(../images/btnDeferPaymentTravel_Ovr.gif);
+}
+.Home .buttonDeferPayment:hover {
+	background-image:url(../images/btnDeferPaymentHome_Ovr.gif);
+}
+/*.buttonNext
+{
+	background-image:url(../images/btnNext.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:84px;
+}
+*/
+.buttonNext, .Car .buttonNext, .Motorcycle .buttonNext, .Travel .buttonNext, .Home .buttonNext, .PA .buttonNext {
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:43px;
+	width:148px;
+	background-position: 0px 0px
+}
+/*.buttonConfirm
+{
+	background-image:url(../images/btnConfirm.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:113px;
+}*/
+
+.ButtonChange {
+	background-image:url(../images/ButtonChange.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:113px;
+	background-position:top;
+}
+.ButtonChange:hover {
+	background-position:bottom;
+}
+.buttonConfirm1 {
+	background-image:url(../images/btnConfirm.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:113px;
+}
+.buttonConfirm1:hover {
+	background-image:url(../images/btnConfirm_rollovr.gif);
+}
+.buttonConfirm, .Car .buttonConfirm, .Motorcycle .buttonConfirm, .Travel .buttonConfirm, .Home .buttonConfirm, .PA .buttonConfirm {
+	background-image:url(../images/button.gif);
+	background-position: -985px 0px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:43px;
+	width:148px;
+}
+/*.buttonPayNow
+{
+	background-image:url(../images/btnPayNow.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:113px;
+}*/
+.buttonPayNow, .Car .buttonPayNow, .Motorcycle .buttonPayNow, .Travel .buttonPayNow, .PA .buttonPayNow, .Home .buttonPayNow {
+	background-image:url(../images/button.gif);
+	background-position: -461px 0px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:43px;
+	width:148px;
+}
+.buttonCancel {
+	/* 	background-image:url(../images/btnCancel.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:98px;
+*/
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:74px;
+	background-position: -249px -42px;
+	float:left;
+}
+.buttonPrintQuotation {
+	background-image:url(../images/btnPrintQuotation.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:148px;
+}
+.buttonPrintQuotation:hover {
+	background-image:url(../images/btnPrintQuotation_rollovr.gif);
+}
+.PA .buttonPrintQuotation:hover {
+	background-image:url(../images/btnPAPrintQuotation_rollovr.gif);
+}
+.buttonPrint {
+	background-image:url(../images/btnPrint.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border:none;
+	cursor:pointer;
+	height:30px;
+	width:112px;
+}
+.buttonPrint:hover {
+	background-image:url(../images/btnPrint_rollovr.gif);
+}
+.Car .buttonPrint:hover {
+	background-image:url(../images/btnCarPrint_rollovr.gif);
+}
+.Motorcycle .buttonPrint:hover {
+	background-image:url(../images/btnMotorcyclePrint_rollovr.gif);
+}
+.PA .buttonPrint:hover {
+	background-image:url(../images/btnPAPrint_rollovr.gif);
+}
+.Home .buttonPrint:hover {
+	background-image:url(../images/btnHomePrint_rollovr.gif);
+}
+.Travel .buttonPrint:hover {
+	background-image:url(../images/btnTravelPrint_rollovr.gif);
+}
+.buttonCalcPremium {
+	background-image:url(../images/btnCalcPremium.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:171px;
+}
+.Car .buttonCalcPremium, .Motorcycle .buttonCalcPremium, .Travel .buttonCalcPremium, .Home .buttonCalcPremium, .PA .buttonCalcPremium {
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:43px;
+	width:231px;
+	background-position:-755px 0px;
+}
+.buttonAmendQuoteDetail {
+	background-image:url(../images/button.gif);
+	background-position: -394px -42px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:135px;
+}
+.buttonProceedToPayment {
+	background-image:url(../images/btnProceedPayment.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:180px;
+}
+/*
+.buttonProceedToPayment:hover
+{
+	background-image:url(../images/btnProceedPayment_rollovr.gif);
+}
+*/
+.Car .buttonProceedToPayment {
+	background-image:url(../images/btnCarProceedPayment_rollovr.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:180px;
+}
+.Home .buttonProceedToPayment {
+	background-image:url(../images/btnHomeProceedPayment_rollovr.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:180px;
+}
+.PA .buttonProceedToPayment {
+	background-image:url(../images/btnPAProceedPayment_rollovr.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:180px;
+}
+.Travel .buttonProceedToPayment {
+	background-image:url(../images/btnTravelProceedPayment_rollovr.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:180px;
+}
+.buttonAddNewMember {
+	background-image:url(../images/btnAddNewMember.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:180px;
+}
+.buttonAddNewMember:hover {
+	background-image:url(../images/btnAddNewMember_rollovr.gif);
+}
+.buttonAddNewFamilyMember {
+	background-image:url(../images/Button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:180px;
+	background-position: -1094px -42px;
+}
+.buttonX {
+	background-image:url(../images/icon_Close.png);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:26px;
+	font-size: 0px;
+	line-height: 0px;
+	display:block;
+	text-indent: -9999px;
+	background-position:center;
+	overflow:hidden;
+}
+.buttonYes {
+}
+.buttonNo {
+}
+.buttonOk {
+}
+.buttonOk_QS {
+	background-image:url(../images/btnOK_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:98px;
+}
+.buttonOk_QS:hover {
+	background-image:url(../images/btnOK_On.gif);
+}
+.buttonNotNow_QS {
+	background-image:url(../images/btnNotNow_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:113px;
+}
+.buttonNotNow_QS:hover {
+	background-image:url(../images/btnNotNow_On.gif);
+}
+.buttonMakeClaim {
+	background-image:url(../images/btnMakeClaim.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:137px;
+}
+.buttonMakeClaim:hover {
+	background-image:url(../images/btnMakeClaim_rollovr.gif);
+}
+.buttonUpdatePolicy {
+	background-image:url(../images/btnUpdatePolicy.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:140px;
+}
+.buttonUpdatePolicy:hover {
+	background-image:url(../images/btnUpdatePolicy_rollovr.gif);
+}
+.buttonChangeCreditCard {
+	background-image:url(../images/btnChangeCreditCard.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:208px;
+}
+.buttonChangeCreditCard:hover {
+	background-image:url(../images/btnChangeCreditCard_rollovr.gif);
+}
+.buttonDownloadPolicyDoc {
+	background-image:url(../images/btnDownloadPolicyDoc.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:224px;
+}
+.buttonDownloadPolicyDoc:hover {
+	background-image:url(../images/btnDownloadPolicyDoc_rollovr.gif);
+}
+.buttonMainPolicies {
+	background-image:url(../images/btnPolicies_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainPolicies:hover {
+	background-image:url(../images/btnPolicies_On.gif);
+}
+.buttonMainPoliciesSelected {
+	background-image:url(../images/btnPolicies_On.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainQuote {
+	background-image:url(../images/btnQuoteProposal_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainQuote:hover {
+	background-image:url(../images/btnQuoteProposal_On.gif);
+}
+.buttonMainQuoteSelected {
+	background-image:url(../images/btnQuoteProposal_On.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainRenewal {
+	background-image:url(../images/btnRenewInvite_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainRenewal:hover {
+	background-image:url(../images/btnRenewInvite_On.gif);
+}
+.buttonMainRenewalSelect {
+	background-image:url(../images/btnRenewInvite_On.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainClaim {
+	background-image:url(../images/btnClaimStatus_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainClaim:hover {
+	background-image:url(../images/btnClaimStatus_On.gif);
+}
+.buttonMainClaimSelected {
+	background-image:url(../images/btnClaimStatus_On.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainProfile {
+	background-image:url(../images/btnProfileDetail_Off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainProfile:hover {
+	background-image:url(../images/btnProfileDetail_On.gif);
+}
+.buttonMainProfileSelected {
+	background-image:url(../images/btnProfileDetail_On.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:58px;
+	width:210px;
+}
+.buttonMainGridView {
+	background-image:url(../images/btnGridView.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:69px;
+	display: block;
+}
+.buttonMainTopMenu_Home {
+	background-image:url(../images/btnTopMenu_Home.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:90px;
+	display: block;
+}
+.buttonMainTopMenu_Home:hover {
+	background-image:url(../images/btnTopMenu_Home_rollovr.gif);
+}
+.buttonMainTopMenu_AbtUs {
+	background-image:url(../images/btnTopMenu_Aboutus.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:96px;
+	display: block;
+}
+.buttonMainTopMenu_AbtUs:hover {
+	background-image:url(../images/btnTopMenu_Aboutus_rollovr.gif);
+}
+.buttonMainTopMenu_MediaCentre {
+	background-image:url(../images/btnTopMenu_mediacentre.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:126px;
+	display: block;
+}
+.buttonMainTopMenu_MediaCentre:hover {
+	background-image:url(../images/btnTopMenu_mediacentre_rollovr.gif);
+}
+.buttonMainTopMenu_Question {
+	background-image:url(../images/btnTopMenu_gotaquestion.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:78px;
+	display: block;
+}
+.buttonMainTopMenu_Question:hover {
+	background-image:url(../images/btnTopMenu_gotaquestion_rollovr.gif);
+}
+.buttonMainTopMenu_Products {
+	background-image:url(../images/btnTopMenu_Product.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:97px;
+	display: block;
+}
+.buttonMainTopMenu_Products:hover {
+	background-image:url(../images/btnTopMenu_Product_rollovr.gif);
+}
+.buttonMainTopMenu_HintTips {
+	/*background-image:url(../images/btnTopMenu_hints&tips.gif);*/
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:114px;
+	display: block;
+}
+.buttonMainTopMenu_HintTips:hover {
+	/*background-image:url(../images/btnTopMenu_hints&tips_rollovr.gif);*/
+}
+.buttonMainTopMenu_Views {
+	background-image:url(../images/btnTopMenu_yourviews.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:42px;
+	width:115px;
+	display: block;
+}
+.buttonMainTopMenu_Views:hover {
+	background-image:url(../images/btnTopMenu_yourviews_rollovr.gif);
+}
+.buttonMainGetQuote {
+	background-image:url(../images/btnGetAQuote.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:41px;
+	width:212px;
+	display: block;
+}
+.buttonMainGetQuoteMenuMotor {
+	background-image:url(../images/Quotedown_motor.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;
+
+}
+.buttonMainGetQuoteMenuMotor:hover {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.buttonMainGetQuoteMenuLowMileage {
+	background-image:url(../images/Quotedown_lowmileage.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;
+	display:none;/* for IE
+	filter:alpha(opacity=80); */
+	/* CSS3 standard 
+	opacity:0.80;*/
+
+}
+.buttonMainGetQuoteMenuLowMileage:hover {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.buttonMainGetQuoteMenuMotorcycle {
+	background-image:url(../images/Quotedown_motorcycle.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;/* for IE
+	filter:alpha(opacity=80); */
+	/* CSS3 standard 
+	opacity:0.80;*/
+
+}
+.buttonMainGetQuoteMenuMotorcycle:hover {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.buttonMainGetQuoteMenuLP {
+	background-image:url(../images/Quotedown_loanprotector.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;/* for IE 
+	filter:alpha(opacity=80);*/
+	/* CSS3 standard 
+	opacity:0.80;*/
+}
+.buttonMainGetQuoteMenuLP:hover {
+/* for IE 
+	filter:alpha(opacity=100);*/
+	/* CSS3 standard 
+	opacity:1.0;*/
+}
+.buttonMainGetQuoteMenuTravel {
+	background-image:url(../images/Quotedown_travel.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;/* for IE 
+	filter:alpha(opacity=80);*/
+	/* CSS3 standard 
+	opacity:0.80;*/
+}
+.buttonMainGetQuoteMenuTravel:hover {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.buttonMainGetQuoteMenuHome {
+	background-image:url(../images/Quotedown_home.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;/* for IE 
+	filter:alpha(opacity=80);*/
+	/* CSS3 standard 
+	opacity:0.80;*/
+}
+.buttonMainGetQuoteMenuHome:hover {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.buttonMainGetQuoteMenuPA {
+	background-image:url(../images/Quotedown_personalaccidents.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;/* for IE 
+	filter:alpha(opacity=80);*/
+	/* CSS3 standard 
+	opacity:0.80;*/
+}
+.buttonMainGetQuoteMenuPA:hover {
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.buttonIconPrevious {
+	background-image:url(../images/icon_previous.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:24px;
+	width:24px;
+}
+.buttonIconNext {
+	background-image:url(../images/icon_next.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:24px;
+	width:24px;
+}
+.buttonIconDelete {
+	background-image:url(../images/icon_delete.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:24px;
+	width:24px;
+	display: block;
+}
+.buttonIconRefresh {
+	background-image:url(../images/icon_refresh.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:24px;
+	width:24px;
+	display: block;
+}
+.buttonIconAdd {
+	background-image:url(../images/icon_add.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:24px;
+	width:24px;
+	display: block;
+}
+.buttonLogin {
+	background-image:url(../images/icon_RedArrow.png);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:22px;
+	width:22px;
+}
+.buttonSignIn {
+	background-image:url(../images/tl_MainPage_Signin.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:36px;
+	width:52px;
+}
+.buttonAddFeedBack {
+	background-image:url(../images/btnAddFeedback.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:32px;
+	width:171px;
+}
+.buttonAddTestimonial {
+	background-image:url(../images/addurtestimonial_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:30px;
+	width:204px;
+}
+.buttonAddTestimonial:hover {
+	background-image:url(../images/addurtestimonial_on.gif);
+}
+.buttonAddItem {
+	background-image:url(../images/button.gif);
+	background-position: -662px -42px;
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:77px;
+}
+.buttonProductTopNav01 {
+	background-image:url(../images/btnTopProduct01_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:76px;
+	height:63px;
+}
+.buttonProductTopNav01:hover {
+	background-image:url(../images/btnTopProduct01_hover.gif);
+}
+.buttonProductTopNav01Selected {
+	background-image:url(../images/btnTopProduct01_hover.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:76px;
+	height:63px;
+}
+.buttonProductTopNav02 {
+	background-image:url(../images/btnTopProduct02_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:77px;
+	height:63px;
+}
+.buttonProductTopNav02:hover {
+	background-image:url(../images/btnTopProduct02_hover.gif);
+}
+.buttonProductTopNav02Selected {
+	background-image:url(../images/btnTopProduct02_hover.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:77px;
+	height:63px;
+}
+.buttonProductTopNav03 {
+	background-image:url(../images/btnTopProduct03_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:79px;
+	height:63px;
+}
+.buttonProductTopNav03:hover {
+	background-image:url(../images/btnTopProduct03_hover.gif);
+}
+.buttonProductTopNav03Selected {
+	background-image:url(../images/btnTopProduct03_hover.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:79px;
+	height:63px;
+}
+.buttonProductTopNav04 {
+	background-image:url(../images/btnTopProduct04_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:80px;
+	height:63px;
+}
+.buttonProductTopNav04:hover {
+	background-image:url(../images/btnTopProduct04_hover.gif);
+}
+.buttonProductTopNav04Selected {
+	background-image:url(../images/btnTopProduct04_hover.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:80px;
+	height:63px;
+}
+.buttonGetQuickQuote {
+	background-image:url(../images/btnGetAQuickQuote.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:37px;
+}
+.buttonGetQuickQuoteCare {
+	background-image:url(../images/btnGetAQuickQuote_care.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:209px;
+	height:37px;
+}
+.buttonGetQuickQuoteTravel {
+	background-image:url(../images/btnGetAQuickQuote_travel.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:209px;
+	height:37px;
+}
+.buttonGetQuickQuoteHome {
+	background-image:url(../images/btnGetAQuickQuote_home.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:209px;
+	height:37px;
+}
+.buttonDownloadClaimForm {
+	background-image:url(../images/btnDownloadClaimForm_home.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:243px;
+	height:37px;
+}
+.buttonDownloadClaimForm {
+	background-image:url(../images/btnDownloadClaimForm.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:243px;
+	height:37px;
+}
+.buttonDownloadClaimFormTravel {
+	background-image:url(../images/btnDownloadClaimForm_travel.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:243px;
+	height:37px;
+}
+.buttonDownloadClaimFormCare {
+	background-image:url(../images/btnDownloadClaimForm_care.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:239px;
+	height:37px;
+}
+.buttonAboutUsMenu {
+	background-image:url(../images/RightPanels/bg_links1.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:26px;
+	padding:0px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+}
+.buttonAboutUsMenuLink {
+	background-image:url(../images/RightPanels/bg_links1.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:200px;
+	height:20px;
+	padding:3px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+	display:block;
+	text-decoration: none;
+}
+.buttonAboutUsMenu:hover, .buttonAboutUsMenuLink:hover {
+	text-decoration:none;
+	color:Black;
+}
+.buttonProductMotorInsuranceMenu {
+	background-image:url(../images/RightPanels/bg_links1.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:26px;
+	padding:0px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+}
+.buttonProductMotorInsuranceMenuLink {
+	background-image:url(../images/RightPanels/bg_links1.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:200px;
+	height:20px;
+	padding:3px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+	display:block;
+	text-decoration: none;
+}
+.buttonProductMotorInsuranceMenu:hover,  .buttonProductMotorInsuranceMenuLink:hover {
+	text-decoration:none;
+	color:Black;
+}
+.buttonProductCareInsuranceMenu {
+	background-image:url(../images/RightPanels/bg_links4.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:26px;
+	padding:0px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+}
+.buttonProductCareInsuranceMenuLink {
+	background-image:url(../images/RightPanels/bg_links4.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:200px;
+	height:20px;
+	padding:3px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+	display: block;
+	text-decoration: none;
+}
+.buttonProductCareInsuranceMenu:hover,  .buttonProductCareInsuranceMenuLink:hover {
+	text-decoration:none;
+	color:Black;
+}
+.buttonProductTravelInsuranceMenu {
+	background-image:url(../images/RightPanels/bg_links2.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:26px;
+	padding:0px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+}
+.buttonProductTravelInsuranceMenuLink {
+	background-image:url(../images/RightPanels/bg_links2.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:200px;
+	height:20px;
+	padding:3px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+	display: block;
+	text-decoration: none;
+}
+.buttonProductTravelInsuranceMenu:hover,  .buttonProductTravelInsuranceMenuLink:hover {
+	text-decoration:none;
+	color:Black;
+}
+.buttonProductHomeInsuranceMenu {
+	background-image:url(../images/RightPanels/bg_links3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:26px;
+	padding:0px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+}
+.buttonProductHomeInsuranceMenuLink {
+	background-image:url(../images/RightPanels/bg_links3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:200px;
+	height:20px;
+	padding:3px 0px 3px 14px;
+	color:#696969;
+	text-align:left;
+	display: block;
+	text-decoration: none;
+}
+.buttonProductHomeInsuranceMenu:hover, .buttonProductHomeInsuranceMenuLink:hover {
+	text-decoration:none;
+	color:Black;
+}
+.buttonMainTopMenuPruductMotor {
+	background-image:url(../images/Dropdown_motor_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:29px;
+	width:95px;
+	display: block;
+}
+.buttonMainTopMenuPruductMotor:hover {
+	background-image:url(../images/Dropdown_motor_on.gif);
+}
+.buttonMainTopMenuPruductHome {
+	background-image:url(../images/Dropdown_home_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:29px;
+	width:95px;
+	display: block;
+}
+.buttonMainTopMenuPruductHome:hover {
+	background-image:url(../images/Dropdown_home_on.gif);
+}
+.buttonMainTopMenuPruductPA {
+	background-image:url(../images/Dropdown_personalaccidents_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:29px;
+	width:95px;
+	display: block;
+}
+.buttonMainTopMenuPruductPA:hover {
+	background-image:url(../images/Dropdown_personalaccidents_on.gif);
+}
+.buttonMainTopMenuPruductTravel {
+	background-image:url(../images/Dropdown_travel_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:29px;
+	width:95px;
+	display: block;
+}
+.buttonMainTopMenuPruductTravel:hover {
+	background-image:url(../images/Dropdown_travel_on.gif);
+}
+.buttonMainTopMenuPruductLP {
+	background-image:url(../images/Dropdown_loanprotector_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:29px;
+	width:95px;
+	display: block;
+}
+.buttonMainTopMenuPruductLP:hover {
+	background-image:url(../images/Dropdown_loanprotector_on.gif);
+}
+.buttonLoanProtectorInsurance {
+	background-image:url(../images/btnLoanProtector_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:52px;
+	width:305px;
+}
+.buttonLoanProtectorInsurance:hover {
+	background-image:url(../images/btnLoanProtector_on.gif);
+}
+.buttonPA {
+	background-image:url(../images/btnPersonalAccident_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:52px;
+	width:305px;
+}
+.buttonPA:hover {
+	background-image:url(../images/btnPersonalAccident_on.gif);
+}
+.modalPopupBox .Content {
+	line-height: 160%;
+}
+.login_top {
+	background-color: #ebebeb;
+	width: 238px;
+	margin-top: -15px;
+}
+.login_top .textBox {
+	width: 90px;
+}
+.right_floating {
+	text-align:left;
+	min-height: 332px;
+}
+.right_menu {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.right_menu li {
+	display: block;
+	width: 150px;
+	height: 30px;
+	padding: 10px 0px 10px 5px;
+}
+.ajaxValidatorHighlight {
+	background-color: #FF9999;
+}
+.ajaxValidator {
+	z-index: 9999;
+	margin-left:23px;
+}
+.ajaxValidator div, .ajaxValidator td {
+	border:solid 1px Black;
+	background-color:LemonChiffon;
+	color:Red;
+	font-weight:bold;
+}
+.ajaxValidator .ajax__validatorcallout_popup_table {
+	display:none;
+	border:none;
+	background-color:transparent;
+	padding:0px;
+}
+.ajaxValidator .ajax__validatorcallout_popup_table_row {
+vertical-align:top;
+	height:100%;
+	background-color:transparent;
+	padding:0px;
+}
+.ajaxValidator .ajax__validatorcallout_callout_cell {
+	width:20px;
+	height:100%;
+	text-align:right;
+vertical-align:top;
+	border:none;
+	background-color:transparent;
+	padding:0px;
+}
+.ajaxValidator .ajax__validatorcallout_callout_table {
+	height:100%;
+	border:none;
+	background-color:transparent;
+	padding:0px;
+}
+.ajaxValidator .ajax__validatorcallout_callout_table_row {
+	background-color:transparent;
+	padding:0px;
+}
+.ajaxValidator .ajax__validatorcallout_callout_arrow_cell {
+	padding:8px 0px 0px 0px;
+	text-align:right;
+	vertical-align:top;
+	font-size:1px;
+	border:none;
+	background-color:transparent;
+}
+.ajaxValidator .ajax__validatorcallout_callout_arrow_cell .ajax__validatorcallout_innerdiv {
+	font-size:1px;
+	position:relative;
+	left:1px;
+	border-bottom:none;
+	border-right:none;
+	border-left:none;
+	width:15px;
+	background-color:transparent;
+	padding:0px;
+}
+.ajaxValidator .ajax__validatorcallout_callout_arrow_cell .ajax__validatorcallout_innerdiv div {
+	height:1px;
+	overflow:hidden;
+	border-top:none;
+	border-bottom:none;
+	border-right:none;
+	padding:0px;
+	margin-left:auto;
+}
+.ajaxValidator .ajax__validatorcallout_error_message_cell {
+	font-family:Verdana;
+	font-size:10px;
+	padding:5px;
+	border-right:none;
+	border-left:none;
+	width:100%;
+}
+.ajaxValidator .ajax__validatorcallout_icon_cell {
+	width:20px;
+	padding:5px;
+	border-right:none;
+}
+.ajaxValidator .ajax__validatorcallout_close_button_cell {
+	vertical-align:top;
+	padding:0px;
+	text-align:right;
+	border-left:none;
+}
+.ajaxValidator .ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv {
+	border:none;
+	text-align:center;
+	width:10px;
+	padding:2px;
+	cursor:pointer;
+}
+.ajaxValidator .ajax__validatorcallout_callout_arrow_cell_left {
+	padding: 8px 0px 0px 0px;
+	margin: 0px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 1px;
+	border: none !important;
+	background-color: transparent !important;
+}
+.ajax__validatorcallout_innerdiv_left {
+	font-size: 1px;
+	position: relative;
+	right: 1px;
+	border-bottom: none !important;
+	border-right: none !important;
+	border-left: none !important;
+	width: 15px;
+	background-color: transparent !important;
+	padding: 0px;
+	margin: 0px;
+}
+.ajaxValidator .ajax__validatorcallout_callout_arrow_cell_left .ajax__validatorcallout_innerdiv_left div {
+	height: 1px;
+	overflow: hidden;
+	border-top: none !important;
+	border-bottom: none !important;
+	border-left: none !important;
+	padding: 0px;
+	margin-right:auto;
+}
+#txtMainDriverDOB_Rfv_vce_popupTable, #txtPolicyStartDate_Rfv_vce_popupTable, #txtPolicyEndDate_Rfv_vce_popupTable {
+	margin-left:25px;
+}
+#txtPHMainTelNumber_Rfv_vce_popupTable {
+	margin-left: 144px;
+}
+.quoteDetails td {
+	padding-right:5px;
+	vertical-align:top;
+}
+#txtPolicyStartDate_cal, #txtPolicyEndDate_cal {
+	padding-top: 2px;
+	padding-left: 4px;
+}
+#vceTelNumber_popupTable {
+	margin-left: 143px;
+}
+/*Links*/
+a.EmailLinks:link, a.EmailLinks:visited, a.EmailLinks:active {
+	color: #626262;
+}
+a.EmailLinks:hover {
+	color: #000000;
+	text-decoration:underline;
+}
+a.Footer:link, a.Footer:visited, a.Footer:active {
+	color: #626262;
+	font-size: 10px;
+	text-decoration:none;
+	cursor:pointer;
+}
+a.Footer:hover {
+	color: #000000;
+	cursor:pointer;
+}
+a.StandardLink:link, a.StandardLink:visited, a.StandardLink:active {
+	color: #626262;
+	font-weight:bold;
+	text-decoration: none;
+}
+a.StandardLink:hover {
+	color: #000000;
+	text-decoration:underline;
+	font-weight:bold;
+}
+a.LoginForgetPassword:link, a.LoginForgetPassword:visited, a.LoginForgetPassword:active {
+	color: #FFFFFF;
+	font-size:10px;
+	text-decoration: none;
+	vertical-align: top;
+}
+a.LoginForgetPassword:hover {
+	color: #FFFFFF;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.Login:link, a.Login:visited, a.Login:active {
+	color: #666;
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight:bold;
+}
+a.Login:hover {
+	color: #333;
+	text-decoration:underline;
+}
+/*Page Border*/
+.pageBorderLeft {
+	background-image:url(../images/frame_border1_1.gif);
+	background-repeat:repeat-y;
+	background-position:left;
+	width:22px;
+	font-size:1px;
+}
+.pageBorderRight {
+	background-image:url(../images/frame_border1_2.gif);
+	background-position: right;
+	background-repeat:repeat-y;
+	width:22px;
+}
+/* Frame*/
+
+.gvFrameTopLeft {
+	background-image:url(../images/frame_grid_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:9px;
+	height:33px;
+	font-size:1px;
+}
+.gvFrameTop {
+	background-image:url(../images/frame_grid_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:33px;
+	font-size:1px;
+}
+.gvFrameTopRight {
+	background-image:url(../images/frame_grid_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:12px;
+	height:33px;
+	font-size:1px;
+}
+.gvFrameBottomLeft {
+	background-image:url(../images/frame_grid_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:9px;
+	height:14px;
+	font-size:1px;
+}
+.gvFrameBottom {
+	background-image:url(../images/frame_grid_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:11px;
+	font-size:1px;
+}
+.gvFrameBottomRight {
+	background-image:url(../images/frame_grid_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:12px;
+	height:11px;
+	font-size:1px;
+}
+.gvFrameLeft {
+	background-image:url(../images/frame_grid_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:9px;
+	font-size:1px;
+}
+.gvFrameRight {
+	background-image:url(../images/frame_grid_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:12px;
+	font-size:1px;
+}
+.gvFrameContent {
+	background-color:White;
+	padding: 15px 15px 15px 15px;
+}
+.gvFrameClearSmallTopLeft {
+	background-image:url(../images/frame_clearS_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:19px;
+	height:15px;
+	font-size:1px;
+}
+.gvFrameClearSmallTop {
+	background-image:url(../images/frame_clearS_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:15px;
+	font-size:1px;
+}
+.gvFrameClearSmallTopRight {
+	background-image:url(../images/frame_clearS_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:17px;
+	height:15px;
+	font-size:1px;
+}
+.gvFrameClearTopLeft {
+	background-image:url(../images/frame_clear_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:19px;
+	height:47px;
+	font-size:1px;
+}
+.gvFrameClearTop {
+	background-image:url(../images/frame_clear_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:47px;
+	font-size:1px;
+}
+.gvFrameClearTopRight {
+	background-image:url(../images/frame_clear_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:17px;
+	height:47px;
+	font-size:1px;
+}
+.gvFrameClearBottomLeft {
+	background-image:url(../images/frame_clear_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:19px;
+	height:13px;
+	font-size:1px;
+}
+.gvFrameClearBottom {
+	background-image:url(../images/frame_clear_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:13px;
+	font-size:1px;
+}
+.gvFrameClearBottomRight {
+	background-image:url(../images/frame_clear_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:17px;
+	height:13px;
+	font-size:1px;
+}
+.gvFrameClearLeft {
+	background-image:url(../images/frame_clear_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:19px;
+	font-size:1px;
+}
+.gvFrameClearRight {
+	background-image:url(../images/frame_clear_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:17px;
+	font-size:1px;
+}
+.gvFrameYellowTopLeft {
+	background-image:url(../images/frame_yellow_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:19px;
+	height:51px;
+	font-size:1px;
+}
+.gvFrameYellowTop {
+	background-image:url(../images/frame_yellow_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:51px;
+	font-size:1px;
+}
+.gvFrameYellowTopRight {
+	background-image:url(../images/frame_yellow_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:17px;
+	height:51px;
+	font-size:1px;
+}
+.gvFrameYellowBottomLeft {
+	background-image:url(../images/frame_yellow_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:19px;
+	height:22px;
+	font-size:1px;
+}
+.gvFrameYellowBottom {
+	background-image:url(../images/frame_yellow_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:22px;
+	font-size:1px;
+}
+.gvFrameYellowBottomRight {
+	background-image:url(../images/frame_yellow_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:17px;
+	height:22px;
+	font-size:1px;
+}
+.gvFrameYellowLeft {
+	background-image:url(../images/frame_yellow_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:19px;
+	font-size:1px;
+}
+.gvFrameYellowRight {
+	background-image:url(../images/frame_yellow_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:17px;
+	font-size:1px;
+}
+.gvFrameResultTopLeft {
+	background-image:url(../images/frame_result_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:5px;
+	height:6px;
+	font-size:1px;
+}
+.gvFrameResultTop {
+	background-image:url(../images/frame_result_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:6px;
+	font-size:1px;
+}
+.gvFrameResultTopRight {
+	background-image:url(../images/frame_result_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:6px;
+	font-size:1px;
+}
+.gvFrameResultBottomLeft {
+	background-image:url(../images/frame_result_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:5px;
+	height:5px;
+	font-size:1px;
+}
+.gvFrameResultBottom {
+	background-image:url(../images/frame_result_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:5px;
+	font-size:1px;
+}
+.gvFrameResultBottomRight {
+	background-image:url(../images/frame_result_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:5px;
+	font-size:1px;
+}
+.gvFrameResultLeft {
+	background-image:url(../images/frame_result_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:5px;
+	font-size:1px;
+}
+.gvFrameResultRight {
+	background-image:url(../images/frame_result_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:6px;
+	font-size:1px;
+}
+.gvFrameLightgreyTopLeft {
+	background-image:url(../images/frame_lightgrey_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:5px;
+	height:6px;
+	font-size:1px;
+}
+.gvFrameLightgreyTop {
+	background-image:url(../images/frame_lightgrey_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:6px;
+	font-size:1px;
+}
+.gvFrameLightgreyTopRight {
+	background-image:url(../images/frame_lightgrey_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:6px;
+	font-size:1px;
+}
+.gvFrameLightgreyBottomLeft {
+	background-image:url(../images/frame_lightgrey_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:5px;
+	height:5px;
+	font-size:1px;
+}
+.gvFrameLightgreyBottom {
+	background-image:url(../images/frame_lightgrey_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:5px;
+	font-size:1px;
+}
+.gvFrameLightgreyBottomRight {
+	background-image:url(../images/frame_lightgrey_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:5px;
+	font-size:1px;
+}
+.gvFrameLightgreyLeft {
+	background-image:url(../images/frame_lightgrey_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:5px;
+	font-size:1px;
+}
+.gvFrameLightgreyRight {
+	background-image:url(../images/frame_lightgrey_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:6px;
+	font-size:1px;
+}
+/*frame for main pages*/
+
+.gvFrameContainerTopLeft {
+/*	background-image:url(../images/frame_Container_Top1_1.gif);
+	background-repeat:no-repeat;
+	font-size:1px;
+*/	width:15px;
+	height:51px;
+}
+.gvFrameContainerTop {
+/*	background-image:url(../images/frame_Container_Top1_2.gif);
+	background-repeat:repeat-x;*/
+	height:51px;
+}
+.gvFrameContainerTopRight {
+/*	background-image:url(../images/frame_Container_Top1_3.gif);
+	background-repeat:no-repeat;
+	font-size:1px;*/
+	width:15px;
+	height:51px;
+}
+.gvFrameContainerBottomLeft {
+/*	background-image:url(../images/frame_Container_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	font-size:1px;*/
+	width:15px;
+	height:19px;
+}
+.gvFrameContainerBottom {
+/*	background-image:url(../images/frame_Container_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	font-size:1px;*/
+	height:19px;
+}
+.gvFrameContainerBottomRight {
+/*	background-image:url(../images/frame_Container_Bottom1_3.gif);
+	background-repeat:no-repeat;*/
+	width:15px;
+	height:19px;
+}
+.gvFrameContainerLeft {
+/*	background-image:url(../images/frame_Container_Mid1_1.gif);
+	background-repeat:repeat-y;
+	font-size:1px;*/
+	width:15px;
+}
+.gvFrameContainerRight {
+/*	background-image:url(../images/frame_Container_Mid1_2.gif);
+	background-repeat:repeat-y;
+	font-size:1px;*/
+	width:15px;
+}
+.gvFrameModuleSubTopLeft {
+	background-image:url(../images/frame_ModuleSub_Top1_1.gif);
+	background-repeat:no-repeat;
+	font-size:1px;
+	width:10px;
+	height:49px;
+}
+.gvFrameModuleSubTop {
+	background-image:url(../images/frame_ModuleSub_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:49px;
+}
+.gvFrameModuleSubTopRight {
+	background-image:url(../images/frame_ModuleSub_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:13px;
+	height:49px;
+	font-size:1px;
+}
+.gvFrameModuleTopLeft {
+	background-image:url(../images/frame_Module_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:99px;
+	font-size:1px;
+}
+.gvFrameModuleTop {
+	background-image:url(../images/frame_Module_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:99px;
+}
+.gvFrameModuleTopRight {
+	background-image:url(../images/frame_Module_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:13px;
+	height:99px;
+	font-size:1px;
+}
+.gvFrameWhiteModuleTopLeft {
+	background-image:url(../images/frame_Module_White_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:63px;
+	font-size:1px;
+}
+.gvFrameWhiteModuleTop {
+	background-image:url(../images/frame_Module_White_Top1_2.gif);
+	background-repeat:repeat-x;
+	height:63px;
+}
+.gvFrameWhiteModuleTopRight {
+	background-image:url(../images/frame_Module_White_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:13px;
+	height:63px;
+	font-size:1px;
+}
+.gvFrameModuleBottomLeft {
+	background-image:url(../images/frame_Module_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:11px;
+	font-size:1px;
+}
+.gvFrameModuleBottom {
+	background-image:url(../images/frame_Module_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:11px;
+	font-size:1px;
+}
+.gvFrameModuleBottomRight {
+	background-image:url(../images/frame_Module_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:13px;
+	height:11px;
+	font-size:1px;
+}
+.gvFrameModuleLeft {
+	background-image:url(../images/frame_Module_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:10px;
+	font-size:1px;
+}
+.gvFrameModuleRight {
+	background-image:url(../images/frame_Module_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:13px;
+	font-size:1px;
+}
+.gvFrameLoginLeft {
+	background-image:url(../images/gvLoginBg_1.gif);
+	background-repeat: no-repeat;
+	width:11px;
+	height: 42px;
+	font-size:1px;
+}
+.gvFrameLoginMiddle {
+	background-image:url(../images/gvLoginBg_2.gif);
+	background-repeat:repeat-x;
+	height: 42px;
+}
+.gvFrameLoginRight {
+	background-image:url(../images/gvLoginBg_3.gif);
+	background-repeat: no-repeat;
+	width:8px;
+	height: 42px;
+	font-size:1px;
+}
+/*Right Panels*/
+.rightVerticalBanner_Container {
+	width:209px;
+	border-radius: 0 0 10px 10px;
+	background: #fff;
+	padding-bottom: 10px;
+}
+.rightVerticalBanner_Content {
+	text-align:left;
+	padding: 20px 10px 0px 10px;
+	background-color:White;
+}
+#divRightBanner {
+	border-top: 2px dotted #CCC;
+	padding-top: 25px;
+	margin-top: 30px;
+}
+/*
+.rightVerticalBanner_Top
+{
+	background-image:url(../images/RightPanels/rightVertBanner_Top.gif);
+	background-repeat:no-repeat;
+	width:209px;
+	height:42px;
+}
+
+.rightVerticalBanner_Bottom
+{
+	background-image:url(../images/RightPanels/rightVertBanner_Bottom.gif);
+	background-repeat:no-repeat;
+	width:209px;
+	height:68px;
+}
+*/
+td .rightPanelLink {
+	background-image:url(../images/RightPanels/bg_links.gif);
+	background-repeat:no-repeat;
+	width:209px;
+	height:27px;
+	padding: 0px 5px 0px 5px;
+}
+a.buttonRightLink {
+	background-image:url(../images/RightPanels/icon_Right.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	height:19px;
+	width:190px;
+	color: #696969;
+	text-decoration: none;
+	text-align:left;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+a.buttonRightLink:hover {
+	color: #000000;
+}
+.Motorcycle a.buttonRightLink {
+	background-image:url(../images/RightPanels/icon_Right_Motorcycle.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	height:19px;
+	width:190px;
+	color: #696969;
+	text-decoration: none;
+	text-align:left;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+.Motorcycle a.buttonRightLink:hover {
+	color: #000000;
+}
+a.buttonRightLinkHome {
+	background-image:url(../images/RightPanels/icon_Right_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	height:19px;
+	width:190px;
+	color: #696969;
+	text-decoration: none;
+	text-align:left;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+a.buttonRightLinkHome:hover {
+	color: #000000;
+}
+a.buttonRightLinkTravel {
+	background-image:url(../images/RightPanels/icon_Right_2.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	height:19px;
+	width:190px;
+	color: #696969;
+	text-decoration: none;
+	text-align:left;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+a.buttonRightLinkTravel:hover {
+	color: #000000;
+}
+a.buttonRightLinkCare {
+	background-image:url(../images/RightPanels/icon_Right_4.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	background-position: right;
+	border-style: none;
+	cursor:pointer;
+	height:19px;
+	width:190px;
+	color: #696969;
+	text-decoration: none;
+	text-align:left;
+	display:block;
+	padding: 0px 0px 0px 8px;
+}
+a.buttonRightLinkCare:hover {
+	color: #000000;
+}
+.myQuoteTopLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:71px;
+	background-position: -418px -106px;
+}
+.Motorcycle .myQuoteTopLeft {
+	background-image: url(../images/RHS.gif);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 71px;
+	background-position: -627px -306px;
+}
+/*
+.LowMileage .myQuoteTopLeft
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Top1_1.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:71px;
+	font-size:1px;
+}
+*/
+.myQuoteTop {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	height:71px;
+	width:197px;
+	background-position: -7px -307px;
+}
+.Motorcycle .myQuoteTop {
+	background-image: url(../images/RHS.gif);
+	background-repeat: no-repeat;
+	height: 71px;
+	width: 197px;
+	background-position: -632px -306px;
+}
+.LowMileage .myQuoteTop {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	height:71px;
+	width:197px;
+	background-position: -425px -307px;
+}
+.myQuoteTopRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:71px;
+	background-position: -621px -106px;
+}
+.Motorcycle .myQuoteTopRight {
+	background-image: url(../images/RHS.gif);
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 71px;
+	background-position: -621px -306px;
+}
+/*
+.LowMileage .myQuoteTopRight
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Top1_3.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:71px;
+	font-size:1px;
+}
+*/
+.myQuoteBottomLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:15px;
+	background-position: -418px -292px;
+}
+.Motorcycle .myQuoteBottomLeft {
+	background-image: url(../images/RHS.gif);
+	background-repeat: no-repeat;
+	width: 7px;
+	height: 15px;
+	background-position: -627px -92px;
+}
+/*
+.LowMileage .myQuoteBottomLeft
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Bottom1_1.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:15px;
+	font-size:1px;
+}
+*/
+.myQuoteBottom {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-x;
+	height:15px;
+	background-position: -426px -92px;
+}
+.Motorcycle .myQuoteBottom {
+	background-image: url(../images/RHS.gif);
+	background-repeat: repeat-x;
+	height: 15px;
+	background-position: -634px -292px;
+}
+/*
+.LowMileage .myQuoteBottom
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Bottom1_2.gif);
+	background-repeat:repeat-x;
+	height:15px;
+	font-size:1px;
+}
+*/
+
+.myQuoteBottomRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:15px;
+	background-position: -621px -92px;
+}
+.Motorcycle .myQuoteBottomRight {
+	background-image: url(../images/RHS.gif);
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 15px;
+	background-position: -830px -623px;
+}
+/*
+.LowMileage .myQuoteBottomRight
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Bottom1_3.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:15px;
+	font-size:1px;
+}
+*/
+.myQuoteLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:7px;
+	background-position: -418px -372px;
+}
+.Motorcycle .myQuoteLeft {
+	background-image: url(../images/RHS.gif);
+	background-repeat: repeat-y;
+	width: 7px;
+	background-position: -418px -193px;
+}
+/*
+.LowMileage .myQuoteLeft
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Mid1_1.gif);
+	background-repeat:repeat-y;
+	width:7px;	
+}
+*/
+.myQuoteRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:6px;
+	background-position: -621px -467px;
+}
+.Motorcycle .myQuoteRight {
+	background-image: url(../images/RHS.gif);
+	background-repeat: repeat-y;
+	width: 6px;
+	background-position: -621px -497px;
+}
+.Motorcycle .RightPanelMyQuoteTitle {
+	width:209px;
+	height:67px;
+	background-position:-627px -106px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.Motorcycle .RightPanelMyQuoteTitle_TP {
+	width:209px;
+	height:64px;
+	background-position:-627px -701px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.Motorcycle .RightPanelMyQuoteTitle_TPO {
+	width:209px;
+	height:64px;
+	background-position: -627px -637px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+/*
+.LowMileage .myQuoteRight
+{
+	background-image:url(../images/RightPanels/tl_MyQuote_Mid1_2.gif);
+	background-repeat:repeat-y;
+	width:6px;	
+}
+*/
+/***********Care**************/
+.myQuoteCareTopLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:71px;
+	background-position: -1045px -307px;
+}
+.myQuoteCareTop {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	height:71px;
+	width:197px;
+	background-position: -1051px -307px;
+}
+.myQuoteCareTopRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:71px;
+	background-position: -1248px -307px;
+}
+.myQuoteCareBottomLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:15px;
+	background-position: -1045px -624px;
+}
+.myQuoteCareBottom {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-x;
+	height:15px;
+	background-position: -1051px -624px;
+}
+.myQuoteCareBottomRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:15px;
+	background-position: -1039px -624px;
+}
+.myQuoteCareLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:7px;
+	background-position: -1045px -529px;
+}
+.myQuoteCareRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:6px;
+	background-position: -1039px -1248px;
+}
+/***********Travel**************/
+.myQuoteTravelTopLeft
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:71px;
+	background-position: -1045px -307px;
+}
+
+.myQuoteTravelTop
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	height:71px;
+	width:197px;
+	background-position: -215px -307px;
+}
+
+.myQuoteTravelTopRight
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:71px;
+	background-position: -1248px -307px;
+}
+
+.myQuoteTravelBottomLeft
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:15px;
+	background-position: -1045px -624px;
+}
+
+.myQuoteTravelBottom
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-x;
+	height:15px;
+	background-position: -1051px -624px;
+}
+
+.myQuoteTravelBottomRight
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:15px;
+	background-position: -1039px -624px;
+}
+
+.myQuoteTravelLeft
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:7px;
+	background-position: -1045px -467px;	
+}
+
+.myQuoteTravelRight
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:6px;
+	background-position: -1039px -1232px;
+}
+/***********Home**************/
+#upItemList  table {
+	border-color: #fff;
+	cellpading: 0 !important;
+	cellspacing: 0 !important;
+}
+
+.myQuoteHomeTopLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:71px;
+	background-position: -1045px -307px;
+}
+.myQuoteHomeTop {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	height:71px;
+	width:197px;
+	background-position: -841px -307px;
+}
+.myQuoteHomeTopRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:71px;
+	background-position: -1248px -307px;
+}
+.myQuoteHomeBottomLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:15px;
+	background-position: -1045px -624px;
+}
+.myQuoteHomeBottom {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-x;
+	height:15px;
+	background-position: -1051px -624px;
+}
+.myQuoteHomeBottomRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:15px;
+	background-position: -1039px -624px;
+}
+.myQuoteHomeLeft {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:7px;
+	background-position: -1045px -529px;
+}
+.myQuoteHomeRight {
+	background-image:url(../images/RHS.gif);
+	background-repeat:repeat-y;
+	width:6px;
+	background-position: -1039px -1248px;
+}
+/***********Search**************/
+ul.searchResult {
+	position: relative;
+	padding: 0 0 0 0;
+	margin: 0 0 0 -13px;
+}
+li.searchPageNameBullet {
+	position: relative;
+	list-style-type: none;
+	padding: 0 0 0 13px;
+	margin: 0;
+	background: url(../images/bullet_red.gif) left -2px no-repeat;
+	background-color: Transparent;
+	width: 100%;
+}
+.searchPageName {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.searchResultDescription {
+	padding: 0 0 0 0;
+}
+.readMore {
+	padding: 10px 0 10px 0;
+}
+/* Font Size */
+.fontNormal8 {
+	font-size: 8px;
+}
+.fontNormal10 {
+	font-size: 10px;
+}
+.fontNormal11 {
+	font-size: 11px;
+}
+.fontNormal12 {
+	font-size: 12px;
+}
+.fontBold8 {
+	font-size: 8px;
+	font-weight: bold;
+}
+.fontBold10 {
+	font-size: 10px;
+	font-weight: bold;
+}
+.fontBold11 {
+	font-size: 11px;
+	font-weight: bold;
+}
+.fontBold12 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.fontNormal14 {
+	font-size: 14px;
+}
+.fontBold14 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.fontNormal16 {
+	font-size: 16px;
+}
+.fontBold16 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 100%;
+}
+.fontBold18 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 100%;
+}
+.fontBold22 {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 100%;
+}
+.fontBold20 {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 100%;
+}
+.fontBoldRed22 {
+	font-size: 22px;
+	font-weight: bold;
+	color: Red;
+	line-height: 100%;
+}
+.fontBoldRed24 {
+	font-size: 24px;
+	font-weight: bold;
+	color: Red;
+	line-height: 100%;
+}
+.fontBoldRed28 {
+	font-size: 28px;
+	font-weight: bold;
+	color: Red;
+	line-height: 100%;
+}
+.fontBoldRed30 {
+	font-size: 30px;
+	font-weight: bold;
+	color: Red;
+	line-height: 100%;
+}
+.fontBoldRed36 {
+	font-size: 36px;
+	font-weight: bold;
+	color: Red;
+	line-height: 100%;
+}
+.fontBoldRed22 {
+	font-size: 22px;
+	font-weight: bold;
+	color: Red;
+	line-height: 100%;
+}
+.fontBoldWhite8 {
+	font-size: 8px;
+	font-weight: bold;
+	color: White;
+}
+.fontNormalWhite8 {
+	font-size: 8px;
+	color: White;
+}
+.fontBoldWhite10 {
+	font-size: 10px;
+	font-weight: bold;
+	color: White;
+}
+.fontNormalWhite10 {
+	font-size: 10px;
+	color: White;
+}
+.fontBoldWhite11 {
+	font-size: 11px;
+	font-weight: bold;
+	color: White;
+}
+.fontNormalWhite11 {
+	font-size: 11px;
+	color: White;
+}
+.fontBoldWhite12 {
+	font-size: 12px;
+	font-weight: bold;
+	color: White;
+}
+.fontNormalWhite12 {
+	font-size: 12px;
+	color: White;
+	font-weight: bold;
+}
+.fontBoldWhite14 {
+	font-size: 14px;
+	font-weight: bold;
+	color: White;
+}
+.fontNormalWhite14 {
+	font-size: 14px;
+	color: White;
+}
+/*Section title*/
+.titleQuotationMotor {
+	background-image:url(../images/Titles/tl_QuotationMotor.gif);
+	background-repeat:no-repeat;
+	width:261px;
+	height:38px;
+	font-size:1px;
+}
+/*Section title*/
+.titleQuotationLowMileage {
+	background-image:url(../images/Titles/tl_QuotationLowMileage.gif);
+	background-repeat:no-repeat;
+	width:261px;
+	height:38px;
+	font-size:1px;
+}
+/*Controls*/
+.Dropdownlist {
+	width: 56%;
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.RadioButtonList {
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.RadioButtonList td {
+	padding-right: 10px;
+}
+.TextBox {
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+	width:56%;
+}
+.Watermark, .waterMarkText {
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+	width:56%;
+	color:#888888;
+}
+/*Modal popup Header*/
+.hdrMyLogin {
+	background-image:url(../images/Titles/tl_MyLogin.gif);
+	background-repeat:no-repeat;
+	width:215px;
+	height:33px;
+	font-size:1px;
+}
+.hdrDecline {
+	background-image:url(../images/Titles/tl_Decline.gif);
+	background-repeat:no-repeat;
+	width:215px;
+	height:33px;
+	font-size:1px;
+}
+.hdrUpdateMobileNo {
+	background-image:url(../images/Titles/tl_updateMobileNo.gif);
+	background-repeat:no-repeat;
+	width:315px;
+	height:33px;
+	font-size:1px;
+}
+.hdrForgetPassword {
+	background-image:url(../images/Titles/tl_ForgetPassword.gif);
+	background-repeat:no-repeat;
+	width:215px;
+	height:33px;
+	font-size:1px;
+}
+.hdrOTP {
+	background-image:url(../images/Titles/tl_OTP.gif);
+	background-repeat:no-repeat;
+	width:215px;
+	height:33px;
+	font-size:1px;
+}
+.hdrChangePassword {
+	background-image:url(../images/Titles/tl_ChangePassword.gif);
+	background-repeat:no-repeat;
+	width:215px;
+	height:33px;
+	font-size:1px;
+}
+.hdrPolicyHolder {
+	background-image:url(../images/Titles/tl_YourPolicies_Holder.gif);
+	background-repeat:no-repeat;
+	width:216px;
+	height:29px;
+	font-size:1px;
+}
+.hdrPolicyHolderMainRider_motorcycle {
+	background-image:url(../images/Titles/tl_Summary_HolderDriver_motorcycle.gif);
+	background-repeat:no-repeat;
+	width:216px;
+	height:29px;
+	font-size:1px;
+}
+.hdrPolicyHolderAndDriver {
+	background-image:url(../images/Titles/tl_Summary_HolderDriver.gif);
+	background-repeat:no-repeat;
+	width:216px;
+	height:29px;
+	font-size:1px;
+}
+.hdrMainPolicy {
+	background-image:url(../images/tl_Module_Policies.gif);
+	background-repeat:no-repeat;
+	width:661px;
+	height:62px;
+	font-size:1px;
+	margin-top: 1px;
+}
+.hdrMainQuote {
+	background-image:url(../images/tl_Module_Quote.gif);
+	background-repeat:no-repeat;
+	width:661px;
+	height:62px;
+	font-size:1px;
+	margin-top: 1px;
+}
+.hdrMainRenewal {
+	background-image:url(../images/tl_Module_Renewal.gif);
+	background-repeat:no-repeat;
+	width:661px;
+	height:62px;
+	font-size:1px;
+	margin-top: 1px;
+}
+.hdrMainClaim {
+	background-image:url(../images/tl_Module_Claim.gif);
+	background-repeat:no-repeat;
+	width:661px;
+	height:62px;
+	font-size:1px;
+	margin-top: 1px;
+}
+.hdrMainProfile {
+	background-image:url(../images/tl_Module_ProfileDtl.gif);
+	background-repeat:no-repeat;
+	width:661px;
+	height:62px;
+	font-size:1px;
+	margin-top: 1px;
+}
+.hdrMainDIYUpdate {
+	background-image:url(../images/tl_Module_DIYUpdate.gif);
+	background-repeat:no-repeat;
+	width:661px;
+	height:62px;
+	font-size:1px;
+	margin-top: 1px;
+}
+.hdrWhyBuyDirect {
+	background-image:url(../images/Titles/tl_whybuydirect.gif);
+	background-repeat:no-repeat;
+	width:138px;
+	height:33px;
+	font-size:1px;
+}
+.hdrApprovedWorkshop {
+	background-image:url(../images/Titles/tl_ApprovedWorkshop.gif);
+	background-repeat:no-repeat;
+	width:350px;
+	height:33px;
+	font-size:1px;
+}
+tr .resultRow {
+	background-color:#EEEEEE;
+	height:40px;
+}
+tr .headerRow {
+	background-color:#EEEEEE;
+	height:40px;
+	font-weight:bold;
+}
+tr .SummaryHdr {
+	background-color:#EEEEEE;
+	height:25px;
+}
+/* tooltip */
+#toolTipContent a {
+	color: orange;
+}
+.toolTip_conent_con {
+	position:relative;
+}
+.toolTip_conent_bg {
+	z-index:0;
+}
+.toolTip_conent {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	padding: 0px 20px 0px 15px;
+	color: white;
+}
+.toolTip_conent a {
+	color: yellow;
+}
+
+/*grid*/
+
+.gvList td, .gvList th {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.gvList A {
+	color: black;
+}
+.gvList A:hover {
+	color: Red;
+}
+.gvHeader {
+	background-color:#888888;
+	text-align:center;
+	font-size: 10px;
+	color:White;
+	height: 42px;
+}
+.gvAlternateRow {
+	text-align:left;
+	font-size: 10px;
+	/*background-image: url("../images/bg_gridrow.gif");*/
+	background-repeat:repeat-x;
+	background-position:bottom;
+	border-collapse: collapse;
+}
+.gvAlternateRow td, .gvAlternateRow th {
+	line-height:100%;
+	padding: 3px 3px 3px 3px;
+	border: solid 1px #CCCCCC;
+	border-collapse: collapse;
+}
+.gvRow {
+	text-align:left;
+	font-size: 10px;
+	/*background-image: url("../images/bg_gridrow.gif");*/
+	background-repeat:repeat-x;
+	background-position:bottom;
+	border-collapse: collapse;
+}
+.gvRow td, .gvRow th {
+	line-height:100%;
+	padding: 3px 3px 3px 3px;
+	border: solid 1px #CCCCCC;
+	border-collapse: collapse;
+}
+.TabInfo {
+	background-color:#EEEEEE;
+	padding: 20px 20px 20px 20px;
+	border: solid 1px #999999;
+}
+.tdSectionHeader {
+	background-color:#EEEEEE;
+	padding: 5px;
+	border-bottom:solid 1px #999999;
+}
+.divBorder {
+	border:solid 1px #999999;
+}
+.imgToggle {
+	cursor: pointer;
+}
+/*AutoComplete flyout */
+
+.autocomplete_completionListElement {
+	visibility : hidden;
+	margin : 0px!important;
+	padding: 2px 0px;
+	background-color : #fff;
+	color : #000;
+	border : #ccc;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 200px;
+	text-align : left;
+	list-style-type : none;
+}
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem {
+	background-color: #FCD900;
+	color: black;
+	padding: 2px;
+}
+/* AutoComplete item */
+
+.autocomplete_listItem {
+	background-color : #fff;
+	color : #000;
+	padding : 2px;
+}
+.ContentPoint {
+	padding: 5px 5px 5px 5px;
+}
+.WhyBuyDirect {
+	background-image:url(../images/RightPanels/bannerWhyBuyDirect.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	height:105px;
+	width:210px;
+	display:block;
+}
+.CustomerServiceClaims {
+	background-image:url(../images/RightPanels/bannerCallClaim.jpg);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	height:105px;
+	width:210px;
+	display: block;
+}
+.readonly {
+	background-color: #d4d0c8;
+	color: #808080;
+}
+.VerticalSeparator {
+	border-right: solid 1px #AAAAAA;
+}
+.HelperDirectUL {
+	padding: 0px;
+	font-size: 11px;
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.HelperDirectUL li {
+	line-height: 14px;
+	padding: 0px;
+}
+.buttonCarInsurance {
+	background-image:url(../images/RightPanels/tl_MotorInsurance_Top_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:34px;
+	width:210px;
+	display: block;
+}
+.buttonAboutUs {
+	background-image:url(../images/RightPanels/tl_AboutUs_top_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:34px;
+	width:210px;
+}
+.buttonPAInsurance {
+	background-image:url(../images/RightPanels/tl_CareInsurance_Top_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:34px;
+	width:210px;
+	display: block;
+}
+.buttonHomeInsurance {
+	background-image:url(../images/RightPanels/tl_HomeInsurance_Top_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:34px;
+	width:210px;
+	display: block;
+}
+.buttonTravelInsurance {
+	background-image:url(../images/RightPanels/tl_TravelInsurance_Top_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:34px;
+	width:210px;
+	display: block;
+}
+.buttonFAQ {
+	background-image:url(../images/RightPanels/tl_Faq_Top_3.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:34px;
+	width:210px;
+}
+.popup_Model_list {
+	min-width:200px;
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #fff;
+	border: solid 1px #ccc;
+	padding: 2px 0px;
+	visibility: hidden;
+	display:table;
+}
+html>body .popup_Model_list {
+	display:block;
+}
+.popup_Model_list_item td {
+	height: 16px;
+	padding: 2px 20px 2px 2px;
+	cursor:pointer;
+	white-space: nowrap;
+}
+.popup_Model_list_item:hover {
+	background-color: #FCD900;
+}
+.popup_Model_list_item_selected {
+	background-color: #c0c0c0;
+}
+.h1_image_title {
+	padding:0px 0px 0px 0px;
+	margin: 0px 0px -6px 0px;
+}
+.QQ_radio_button_list label {
+	margin-right: 10px;
+}
+h2#hotline {
+	background-image: url(../images/homepage-contact-number.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 0px;
+	height: 35px;
+	width: 712px;
+	text-align: left;
+	margin-top: 5px;
+}
+h2#hotline span {
+	display: none;
+}
+h1#carBtn span, h1#travelBtn span, h1#homeBtn span, h1#personalBtn span, h1#carBtnQt span, h1#travelBtnQt span, h1#homeBtnQt span, h1#personalBtnQt span {
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+	display: none;
+}
+h1#carBtn {
+ background-image: url(../images/mainBanner/homepage_banner-05.gif);
+	height: 41px;
+	width: 119px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1#carBtn:hover {
+ background-image: url(../images/mainBanner/homepage_banner-05.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+h1#carBtnQt {
+ background-image: url(../images/mainBanner/homepage_banner-06.gif);
+	height: 41px;
+	width: 119px;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1#carBtnQt:hover {
+ background-image: url(../images/mainBanner/homepage_banner-06.gif);
+	background-position: left bottom;
+}
+h1#travelBtn {
+ background-image: url(../images/mainBanner/homepage_banner-07.gif);
+	height: 41px;
+	width: 115px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+}
+h1#travelBtn:hover {
+ background-image: url(../images/mainBanner/homepage_banner-07.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+h1#travelBtnQt {
+ background-image: url(../images/mainBanner/homepage_banner-08.gif);
+	height: 41px;
+	width: 113px;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1#travelBtnQt:hover {
+ background-image: url(../images/mainBanner/homepage_banner-08.gif);
+	background-position: left bottom;
+	font-family: Verdana, Calibri, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1#homeBtn {
+ background-image: url(../images/mainBanner/homepage_banner-09.gif);
+	height: 41px;
+	width: 119px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+}
+h1#homeBtn:hover {
+ background-image: url(../images/mainBanner/homepage_banner-09.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+h1#homeBtnQt {
+ background-image: url(../images/mainBanner/homepage_banner-10.gif);
+	height: 41px;
+	width: 115px;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+}
+h1#homeBtnQt:hover {
+ background-image: url(../images/mainBanner/homepage_banner-10.gif);
+	background-position: left bottom;
+}
+h1#personalBtn {
+ background-image: url(../images/mainBanner/homepage_banner-11.gif);
+	height: 41px;
+	width: 117px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+}
+h1#personalBtn:hover {
+ background-image: url(../images/mainBanner/homepage_banner-11.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+h1#personalBtnQt {
+ background-image: url(../images/mainBanner/homepage_banner-12.gif);
+	height: 41px;
+	width: 116px;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+}
+h1#personalBtnQt:hover {
+ background-image: url(../images/mainBanner/homepage_banner-12.gif);
+	background-position: left bottom;
+}
+#blanket {
+	background-color:#ffce02;
+	opacity: 0.90;
+	filter:alpha(opacity=90);
+	position:absolute;
+	z-index: 9001;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+#popUpDiv {
+	position:absolute;
+	background-color:#eeeeee;
+	width:600px;
+	height:360px;
+	z-index: 9002;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	left: 0px;
+	top: 0px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+.buttonGoHomePage {
+	background-image: url(../images/btnGoBackHome.gif);
+	background-repeat:no-repeat;
+	background-color: Transparent;
+	border: none 0px #fff;
+	width: 137px;
+	height: 30px;
+	cursor:pointer;
+	margin-top: 10px;
+}
+.buttonGoHomePage:hover {
+	background-image: url(../images/btnGoBackHome_rollovr.gif);
+}
+.ErrorMessage {
+	color: Red;
+}
+.benefitTable {
+	border:solid 1px #7F7F7F;
+	border-collapse:collapse;
+}
+.benefitTable td {
+	white-space:nowrap;
+	vertical-align:top;
+}
+.tp_top_left {
+	width:12px;
+	height: 5px;
+	background: url(images/tp_top_01.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+.tp_top_mid {
+	height: 5px;
+	background: url(images/tp_top_02.gif);
+	background-repeat:repeat-x;
+}
+.tp_top_right {
+	width:5px;
+	height: 5px;
+	background: url(images/tp_top_03.gif);
+	background-repeat:no-repeat;
+}
+.tp_left {
+	width: 12px;
+	background: url(images/tp_left_01.gif);
+	background-position:right;
+	background-repeat:repeat-y;
+}
+.tp_right {
+	width: 5px;
+	background: url(images/tp_right_01.gif);
+	background-repeat:repeat-y;
+}
+.tp_btm_left {
+	width:12px;
+	height: 5px;
+	background: url(images/tp_btm_01.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+.tp_btm_mid {
+	height: 5px;
+	background: url(images/tp_btm_02.gif);
+	background-repeat:repeat-x;
+}
+.tp_btm_right {
+	width:5px;
+	height: 5px;
+	background: url(images/tp_btm_03.gif);
+	background-repeat:no-repeat;
+}
+.tp_content {
+	padding: 5px;
+}
+.referAFriendMid {
+	background-image: url(../images/RightPanels/tl_ReferAFriend_mid.gif);
+	width: 216px;
+	background-repeat:repeat-y;
+	padding: 0px;
+	margin: 0px;
+	text-align:justify;
+}
+.buttonViewPolicy {
+	background-color: Transparent;
+	border-style:none;
+	background-image: url(../images/btnViewPolicy.gif);
+	width: 79px;
+	height: 21px;
+	cursor:pointer;
+}
+.buttonRenewalInfo {
+	background-color: Transparent;
+	border-style:none;
+	background-image: url(../images/btnRenewalInfo.gif);
+	width: 86px;
+	height: 21px;
+	cursor:pointer;
+}
+.recommented {
+	background-image: url(../images/recommentedbtn.gif);
+	padding-left: 73px;
+	height:30px;
+	background-position:left;
+	background-repeat:no-repeat;
+	float:left;
+	line-height: 30px;
+}
+.LeftInnerBox {
+	width:695px;
+	padding-bottom:10px;
+}
+.LeftInnerBoxFooter {
+	width:695px;
+	height:12px;
+	background-image:url(../images/LeftInnerBox.gif);
+	background-position:0px -66px;
+	background-repeat:no-repeat;
+	font-size:8px;
+}
+.LIBTitle_NoTitle {
+	width:695px;
+	height:12px;
+	background-image:url(../images/LeftInnerBox.gif);
+	background-position:0px -958px;
+	background-repeat:no-repeat;
+}
+.TermsConditionBox {
+	width:640px;
+	height:120px;
+	padding:0px 10px 10px 10px;
+	overflow:scroll;
+}
+.TermsConditionsTitle {
+	font-size:12px;
+	font-weight:bold;
+}
+#tblTNC {
+	margin: 0 auto;
+	border-top: 1px dotted #ccc;
+	padding: 10px 0 40px;
+}
+.advisory {
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #f2f2f2;
+	border: 1px solid red;
+	font-size: 12px;
+}
+.advisory a {
+	text-decoration:none;
+}
+.advisory .title {
+	font-size: 14px;
+}
+.IconSmallTick_Highlight {
+	width:23px;
+	height:23px;
+	background-image:url(../images/Icon.gif);
+	background-position:0px -23px;
+	background-repeat:no-repeat;
+	border:none 0px black;
+}
+.IconSmallTick {
+	width:23px;
+	height:20px;
+	background-image:url(../images/Icon.gif);
+	background-position:-23px -24px;
+	background-repeat:no-repeat;
+	border:none 0px black;
+}
+.IconFAQ {
+	width:23px;
+	height:23px;
+	background-image:url(../images/Icon.gif);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	border:0;
+}
+.ButtonThirdPartyOnly {
+	width:109px;
+	height:25px;
+	background-image:url(../images/CoverDetailTableHeader.gif);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	cursor:pointer;
+	border: none;
+}
+.ButtonThirdPartyOnly_Highlight {
+	width:109px;
+	height:25px;
+	background-image:url(../images/CoverDetailTableHeader.gif);
+	background-position:0px -24px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	cursor:pointer;
+	border: none;
+}
+.ButtonThirdPartyPlus {
+	width:135px;
+	height:25px;
+	background-image:url(../images/CoverDetailTableHeader.gif);
+	background-position:-128px 0px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	cursor:pointer;
+	border: none;
+}
+.ButtonThirdPartyPlus_Highlight {
+	width:135px;
+	height:25px;
+	background-image:url(../images/CoverDetailTableHeader.gif);
+	background-position:-132px -24px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	cursor:pointer;
+	border: none;
+}
+.ButtonComprehensive {
+	width:107px;
+	height:25px;
+	background-image:url(../images/CoverDetailTableHeader.gif);
+	background-position:-269px 0px;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	cursor:pointer;
+	border: none;
+}
+.ButtonComprehensive_Highlight {
+	width:107px;
+	height:25px;
+	background-image:url(../images/CoverDetailTableHeader.gif);
+	background-position:-266px -24px;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	border: none;
+}
+/*.Column1,.Column2,.Column3
+{
+	padding:0;
+}*/
+
+.CoverDetailTableColumnAlt {
+	width:150px;
+}
+.LIBTitle_SelectACover {
+	width:695px;
+	height:33px;
+	background-image:url(../images/LeftInnerBox.gif);
+	background-position:0px -188px;
+	background-repeat:no-repeat;
+}
+.LIBTitle_SelectACover_Highlight {
+	width:695px;
+	height:33px;
+	background-image:url(../images/LeftInnerBox.gif);
+	background-position:0px -221px;
+	background-repeat:no-repeat;
+}
+.CoverDetailTable {
+	width:695px;
+	padding:0px;
+	margin:0px;
+}
+.CoverDetailTable b, .Tb_OptionalBenefits b {
+	text-transform: capitalize;
+}
+#rptOptionalBenefits_ctl00_lblSumInsuredTitle, #rptOptionalBenefits_ctl00_lblAdditionalPremiumTitle {
+	display:block;
+	width: 150px;
+	white-space: pre-wrap;
+}
+.CoverDetailTableCell {
+	border-bottom:1px dotted #b7b7b7;
+	border-right:1px dotted #b7b7b7;
+	padding-bottom:10px;
+	/*padding-left:10px;*/
+    text-align:center;
+}
+.ButtonChoosePlan_Init {
+	width:128px;
+	height:28px;
+	border:none 0px black;
+	background-image:url(../images/ButtonCoverTableHeader.gif);
+	background-position:-256px 0px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.ButtonChoosePlan_Highlight {
+	width:128px;
+	height:28px;
+	border:none 0px black;
+	background-image:url(../images/ButtonCoverTableHeader.gif);
+	background-position:-128px 0px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.FontNormalRed14 {
+	color:#ee392c;
+	font-weight:bold;
+}
+.CoverDetailTableFirstCol {
+	width:207px;
+	text-align:left;
+	border-bottom:1px dotted #b7b7b7;
+	border-right:1px dotted #b7b7b7;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+.CoverDetailTableCellLastCol {
+	border-bottom:1px dotted #b7b7b7;
+	padding-bottom:10px;
+	text-align:center;
+}
+.CoverDetailTableCellLastCol_Highlight {
+	border-top: 1px dotted #b7b7b7;
+	padding-bottom:0px;
+	text-align:center;
+}
+a.CoverTextLink:link, a.CoverTextLink:visited, a.CoverTextLink:active, a.CoverTextLink:hover {
+	text-decoration:underline;
+	color:#696969;
+}
+a.LinkUnderline12 {
+	font-size:12px;
+	color:#ff6600;
+	text-decoration:underline;
+}
+.CoverDetailTableCell_Highlight {
+	border-right:1px dotted #b7b7b7;
+	text-align:center;
+	padding:0px;
+}
+.CoverDetailTableFAQCol {
+	width:23px;
+	padding-left:6px;
+	text-align:center;
+	border-bottom:1px dotted #b7b7b7;
+	padding-bottom:10px;
+}
+.RightPanelMyQuoteTitle {
+	width:209px;
+	height:67px;
+	background-position:0px -106px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.RightPanelMyQuoteTitle_TP {
+	width:209px;
+	height:61px;
+	background-position:0px -701px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.RightPanelMyQuoteTitle_TPO {
+	width:209px;
+	height:64px;
+	background-position: 0px -637px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.RightPanelMyQuoteDetail {
+	width:199px;
+	height:119px;
+	background-position:-209px -513px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+	padding-right:10px;
+	padding-top:5px;
+	text-align:right;
+}
+.RightPanelMyQuote {
+	width:209px;
+	height:48px;
+	background-position:0px -383px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.RightPanelMyQuoteDetailBig {
+	width:199px;
+	background-position:0px -431px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+	padding-right:10px;
+	text-align:right;
+}
+.RightPanelMyQuoteBtm {
+	width:209px;
+	height:15px;
+	background-position:0px -367px;
+	background-repeat:no-repeat;
+	background-image:url(../images/RHS.gif);
+}
+.RightPanelBox {
+	width:209px;
+	margin-bottom:15px;
+}
+.FontBoldBlack12 {
+	color:#333333;
+	font-weight:bold;
+	font-size:12px;
+	text-decoration:none;
+}
+.LeftInnerBoxContentNoPadding {
+	width:695px;
+	background-image:url(../images/Border.gif);
+	background-position:-944px 0px;
+	background-repeat:repeat-y;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	vertical-align:top;
+}
+.CoverDetailTableHeader {
+	background-image:url(../images/BorderHorizon.gif);
+	background-position:0px 0px;
+	background-repeat:repeat-x;
+	height:83px;
+	line-height:23px;
+}
+.LIBTitle_OptionalBenefits {
+	width:695px;
+	height:33px;
+	background-image:url(../images/LeftInnerBox.gif);
+	background-position:0px -826px;
+	background-repeat:no-repeat;
+}
+.RightBox {
+	width:219px;
+	padding-left:10px;
+	float:left;
+	height:100%;
+}
+.RightPanelBox {
+	width:209px;
+	margin-bottom:15px;
+}
+.HeaderRightBoxFooterWithBG {
+	display:none;
+	width:209px;
+	height:16px;
+	background-image:url(../images/RHS.gif);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	margin-top:20px;
+}
+.Tb_OptionalBenefits#header td {
+	font-weight:bold;
+}
+.Tb_OptionalBenefits td#subitem {
+	padding-left:25px;
+}
+.Tb_OptionalBenefits td {
+	border-top:1px dotted #b7b7b7;
+}
+.Tb_OptionalBenefits td#LastCol {
+	border-top:0px dotted #b7b7b7;
+	width:5px;
+}
+.Tb_OptionalBenefits td#FirstCol {
+	border-top:0px dotted #b7b7b7;
+	width:5px;
+}
+.Is_Sumupto_TextBalck {
+	color:Black;
+}
+.Is_Sumupto_TextGreay {
+	color:Gray;
+}
+#announcement {
+	background-color: white;
+	color: #000;
+	font-size: 11px;
+	padding: 15px;
+	width: 700px;
+	font-weight: bold;
+	margin: 0 auto;
+	clear: both;
+	width: 957px;
+	border: 1px dotted black;
+	margin-bottom:10px;
+}
+img {
+	border:0px;
+}
+.PaymentHeading h3 {
+	padding-top: 20px;
+}
+#quickSurvey_pnl {
+	display: none;
+}
+
+/* Qualifying page Site Links */
+.QTravelTop, .QLink, .QBottom, .QLowMileageTop, .QMotorcycleTop, .QHomeTop, .QPATop, .QSOSTop {
+	background-image: url(../images/RHS.gif);
+	background-repeat: no-repeat;
+}
+.QTravelTop {
+	background-position: -209px 0px;
+	height: 66px;
+}
+.QLink {
+	height: 25px;
+	display: block;
+	background-position: 0px -65px;
+}
+.QLink a {
+	text-decoration: none;
+	padding-left: 12px;
+	text-transform: capitalize;
+	line-height: 27px;
+}
+.QBottom {
+	background-position: 0px -91px;
+	width: 210px;
+	height: 15px;
+}
+.QLowMileageTop {
+	background-position: -418px 0px;
+	height: 66px;
+}
+.QMotorcycleTop {
+	background-position: -627px 0px;
+	height: 66px;
+}
+.QHomeTop {
+	background-position: -836px 0px;
+	height: 66px;
+}
+.QPATop {
+	background-position: -1045px 0px;
+	height: 66px;
+}
+
+
+/*Page quote header except Home*/
+.Pager_Style1_Step1, .Pager_Style1_Step2, .Pager_Style1_Step3, .Pager_Style1_Step4, .Pager_Style1_Step5 {
+	background-image: url(../images/LeftOuterBox.gif);
+	background-repeat: no-repeat;
+	height: 52px;
+	width: 749px;
+}
+.Pager_Style1_Step1 {
+	background-position: 1px -24px;
+}
+.Pager_Style1_Step2 {
+	background-position:1px -113px;
+}
+.Pager_Style1_Step3 {
+	background-position:1px -202px;
+}
+.Pager_Style1_Step4 {
+	background-position:1px -291px;
+}
+.Pager_Style1_Step5 {
+	background-position:1px -380px;
+}
+/*Page quote header Home*/
+.Pager_Style2_Step1, .Pager_Style2_Step2, .Pager_Style2_Step3, .Pager_Style2_Step4 {
+	background-image: url(../images/LeftOuterBox.gif);
+	background-repeat: no-repeat;
+	height: 52px;
+	width: 749px;
+}
+.Pager_Style2_Step1 {
+	background-position: 0 -465px;
+}
+.Pager_Style2_Step2 {
+	background-position:0px -554px;
+}
+.Pager_Style2_Step3 {
+	background-position:0px -643px;
+}
+.Pager_Style2_Step4 {
+	background-position:0px -732px;
+}
+.For_Lowmileage_Notice {
+	display: none;
+	padding-top: 15px;
+	padding-left : 10px;
+	padding-bottom: 15px;
+	padding-right : 10px;
+	background-color:#666;
+	width:195px;
+	color:White;
+	border-radius: 5px;
+	margin-top: 7px;
+}
+.For_Lowmileage_Notice a { 
+	color: #fff;
+	font-weight: bold;
+}
+
+/*Start: Second Chance*/
+ .FormLine {
+    /*vertical-align: top;
+    width: 670px;*/
+width: 665px;
+border-bottom: 1px dotted #CCC;
+display: block;
+min-height: 40px;
+padding: 8px 0;
+}
+.FormLineTitle {
+    /*line-height: 17px;
+    padding-bottom: 13px;
+    padding-right: 14px;
+    text-align: right;
+    vertical-align: inherit;
+    width: 485px;*/
+padding-left: 20px;
+width: 456px;
+}
+.FormLineValue {
+    /*line-height: 20px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    text-align: left;
+    vertical-align: middle;
+    width: 270px;*/
+}
+
+.Pager_Style3_Step1,.Pager_Style3_Step2,.Pager_Style3_Step3,.Pager_Style3_Step4,.Pager_Style3_Step5,.Pager_Style3_Step6 {
+    background-image: url(../images/LeftOuterBoxSOS.gif);
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 736px;
+}
+
+.Pager_Style3_Step1 {
+	background-position: 1px -24px;
+}
+
+.Pager_Style3_Step2
+{
+	background-position:1px -113px;
+}
+.Pager_Style3_Step3
+{
+	background-position:1px -202px;
+}
+.Pager_Style3_Step4
+{
+	background-position:1px -291px;
+}
+.Pager_Style3_Step5
+{
+	background-position:1px -380px;
+}
+.Pager_Style3_Step6
+{
+	background-position:1px -468px;
+}
+
+.QSOSTop {
+	background-position: -1254px 0px;
+	height: 66px;
+}
+
+
+.myQuoteTop_SOS
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	height:71px;
+	width:197px;
+	background-position: -1261px -307px;
+
+}
+.myQuoteTopLeft_SOS
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:7px;
+	height:71px;
+	background-position: -418px -106px;
+}
+
+.myQuoteTopRight_SOS
+{
+	background-image:url(../images/RHS.gif);
+	background-repeat:no-repeat;
+	width:6px;
+	height:71px;
+	background-position: -621px -106px;
+}
+
+.buttonMainGetQuoteMenuSOS
+{
+	background-image:url(../images/Quotedown_SOS.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;
+	/* for IE
+	filter:alpha(opacity=80); */
+	/* CSS3 standard 
+	opacity:0.80;*/
+
+}
+.buttonMainGetQuoteMenuSOS:hover
+{
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+
+/*End:SOS*/
+
+.rounded-company
+{
+	background-color: #919191;
+	background-image: url("../images/curvtopleft.png");
+	background-position: left -1px;
+	background-repeat: no-repeat;
+	
+	padding-left: 12px;
+	color: Red;
+}
+.rounded-company h3
+{
+	color: #fff;
+	font-weight: bold;	
+}
+.rounded-q4
+{
+	background-color: #919191;
+	background-image: url("../images/curvtopright.png");
+	background-position: right -1px;
+	background-repeat: no-repeat;
+}
+.FormLineTitleSeconChance
+{
+	line-height: 17px;
+	padding-bottom: 13px;
+	padding-right: 14px;
+	text-align: right;
+	vertical-align: inherit;
+	width: 58%;
+}
+/*------------------------------------*\
+	NEW TOP NAV MENU
+\*------------------------------------*/
+
+
+ #nav, #nav ul, #nav ol, #nav li, #nav-quotes, #nav-quotes ul, #nav-quotes ol, #nav-quotes li {
+	margin:0;
+	padding:0;
+}
+#nav {
+	list-style:none;
+	font-weight:bold;
+	/* Clear floats */
+	float:left;
+	width: 708px;
+	background: #fff;
+}
+#nav-quotes {
+	float: left;
+	font-weight: bold;
+	list-style: none outside none;
+	width: 708px;
+}
+#nav a {
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	background-color: #919191;
+	height:42px;
+	line-height:42px !important;
+	padding: 0 20px;
+	border-right:1px solid #ccc;
+}
+#nav-quotes a {
+	background-color: #919191;
+	border-right: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	display: block;
+	height: 42px;
+	line-height: 42px;
+	padding: 0 21px;
+	text-decoration: none;
+}
+#nav li, #nav-quotes li {
+	float:left;
+	position:relative;
+}
+#nav a#Home, #nav a#home, #nav-quotes a#Home, #nav-quotes a#home {
+	background-image: url("../images/homepagesprite.png");
+	background-position: -10px -134px;/
+}
+#nav a#Home:hover, #nav a#home:hover, #nav-quotes a#Home:hover, #nav-quotes a#home:hover {
+	background:#FCD900 url(../images/top-menu/HomeTopMenuHover.gif) top left no-repeat;
+}
+#nav a#reviews, #nav-quotes a#reviews {
+	border-right:1px solid #fff;
+	background-image: url("../images/homepagesprite.png");
+	background-position: 85px -197px;
+	border-radius:0 0 7px 0;
+}
+#nav a#reviews:hover, #nav-quotes a#reviews:hover {
+	background:#FCD900 url(../images/top-menu/ReviewsTopMenuHover.gif) top right no-repeat;
+}
+#nav a#products, #nav-quotes a#products {
+	padding:0 21px !important;
+}
+#nav a:hover, #nav-quotes a:hover {
+	color:#919191;
+	background-color:#FCD900;
+	text-decoration:underline;
+}
+/*--- DROPDOWN ---*/
+#nav ul, #nav-quotes ul {
+	background:#fff;
+	background:rgba(255, 255, 255, 0);
+	list-style:none;
+	position:absolute;
+	left:-9999px;
+	z-index: 1;
+}
+#nav ul li, #nav-quotes ul li {
+	border-bottom:1px solid #ccc;
+	float:none;
+	padding:0;
+	margin:0;
+}
+#nav ul a, #nav-quotes ul a {
+	white-space:nowrap;
+}
+#nav li:hover ul, #nav-quotes li:hover ul {
+	left:0;
+}
+#nav li:hover a, #nav-quotes li:hover a {
+	text-decoration:none;
+	background-color: #FCD900;
+	color: #000;
+}
+#nav li:hover ul li a, #nav-quotes li:hover ul li a {
+	text-decoration:none;
+	height:35px;
+	line-height:35px;
+	border:0;
+	background-color: #ebebeb;
+}
+#nav li:hover ul li a:hover, #nav-quotes li:hover ul li a:hover {
+	background:#ccc;
+}
+
+/*------------------------------------*\
+	End NEW TOP NAV MENU
+\*------------------------------------*/
+
+/*
+.proceedlowmileage, .proceedstandardcar {
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:43px;
+	width:148px;
+	background-position: 0px 0px
+}
+*/
+
+#dvMainQuestions #lblQ1,
+#dvMainQuestions #lblQ2,
+#dvMainQuestions #lblQ3,
+#dvMainQuestions #lblQ7,
+#dvMainQuestions #lblQ8,
+.Travel #requirements #SmartLabel1,
+.Travel #requirements #SmartLabel2,
+.Travel #requirements #SmartLabel4,
+.Travel #requirements #SmartLabel6,
+.Travel #requirements #SmartLabel8,
+.PA #requirements #lblQ1,
+.PA #requirements #lblQ2,
+.PA #requirements #lblQ3,
+.PA #requirements #lblQ4,
+.PA #requirements #lblQ5,
+.PA #requirements #lblQ6,
+.Motorcycle #requirements #lblQ1,
+.Motorcycle #requirements #lblQ2,
+.Motorcycle #requirements #lblQ3,
+.Motorcycle #requirements #lblQ4,
+.Motorcycle #requirements #SmartLabel2,
+.Home #requirements #SmartLabel2,
+.Home #requirements #SmartLabel4,
+.Home #requirements #SmartLabel6
+{
+	display: block;
+	line-height: 28px;
+	float: left;
+	padding: 0 5px 0 37px;
+	background-image: url(../images/bullet_gray.gif);
+	background-repeat: no-repeat;
+	margin-left: 30px;
+}
+.PA #requirements #lblQ3 {
+	width: 84%;
+	line-height: 20px !important;
+	margin-right: -11px;
+}
+.Home #requirements #SmartLabel4 {
+	width: 576px;
+}
+/*
+#btnNo {
+	background-color:Transparent;
+	background-image:url(../images/button.gif);
+	background-position: -322px -42px;
+	background-repeat:no-repeat;
+	border-style: none;
+	cursor:pointer;
+	height:26px;
+	width:72px;
+}
+*/
+#sgfooter {
+	margin: 160px auto 0;
+	display: block;
+}
+.Motorcycle #tblQQ,
+.Home #up {
+	width: 90%;
+	margin: 0 auto;
+}
+#tblQQ #SmartLabel1 {
+	display: block;
+	padding-bottom: 10px;
+	font-weight: normal !important;
+}
+#dvAditionalQQ, 
+#SOS,
+#lowmileage,
+#standardcar,
+#dvPositiveMessage {
+	background-image: url(../images/mainquestions_bg.gif);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	padding: 25px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+/*
+	-moz-box-shadow: 5px 5px 3px #ebebeb;
+	-webkit-box-shadow: 5px 5px 3px #ebebeb;
+	box-shadow: 5px 5px 3px #ebebeb;
+*/
+-webkit-box-shadow: 0px 5px 4px rgba(50, 50, 53, 0.20);
+-moz-box-shadow:    0px 5px 4px rgba(50, 50, 53, 0.20);
+box-shadow:         0px 5px 4px rgba(50, 50, 53, 0.20);
+	width: 90%;
+	margin: 0 auto 17px;
+}
+#dvMainQuestions {
+	width: 90%;
+	margin: 0 auto 17px;
+}
+
+.frameBottomTr
+{
+ width:970px;	
+}
+
+
+.buttonMainGetQuoteMenuLife
+{
+	background-image:url(../images/Quotedown_termlife.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:28px;
+	width:167px;
+	display: block;
+	/* for IE 
+	filter:alpha(opacity=80);*/
+	/* CSS3 standard 
+	opacity:0.80;*/
+}
+.buttonMainGetQuoteMenuLife:hover
+{
+	/* for IE */
+	filter:alpha(opacity=100);
+	/* CSS3 standard */
+	opacity:1.0;
+}
+.proceedlowmileage,
+.proceedstandardcar,
+.proceedSOS
+{
+	background-image:url(../images/button.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	background-position: -147px 0px;
+	width: 168px;
+	height: 43px;
+}
+.sosrequirement {
+	width: 90%;
+}
+#lblConfirm, #lblConFirm {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 15px;
+}
+#rblConfirm {
+	margin-bottom: 30px;
+	display: block;
+	width: 130px;
+}
+#dvPositiveMessage {
+	margin-bottom: 40px;
+	margin-top: -20px;
+}
+#dvPositiveMessage p {
+	margin-left: 30px;
+}
+#dvPositiveMessage img {
+	float: right;
+	margin-right: -25px;
+	margin-top: 14px;
+}
+#positivelist {
+	padding: 0;
+	margin: 20px 0 0 30px;
+}
+#positivelist li,
+.car_recommended li,
+.car_panel li,
+.lowmileage_recommended li
+ {
+	list-style: none;
+	background-image: url(../images/icon_TickMotor.gif);
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	line-height: 20px;
+}
+#lowmileagecars, #commonrequirements {
+	padding: 10px;
+}
+.lowmileage_recommended,
+.car_recommended
+ {
+	background-image: url(../images/Banners/low_recommended.jpg);
+}
+.car_panel 
+{
+	background-image: url(../images/Banners/car_panel.jpg);
+}
+.car_recommended, .car_panel, .lowmileage_recommended
+{
+	background-repeat: no-repeat;
+	height: 253px;
+	text-align: left;
+	padding: 39px 0 0 58px;
+	margin-bottom: 30px;
+}
+.car_recommended img, .car_panel img, .lowmileage_recommended img
+{
+	float:left;
+	margin: 0 68px;	
+}
+.car_recommended ul, .car_panel ul, .lowmileage_recommended ul {
+	float:left;
+	padding: 0;
+	margin: 4px 0 13px 0;
+	list-style: none;
+}
+.popUpBoaderCommonQualifying {
+	clear: both;
+	width: 89%;
+}
+#msglblHeader {
+	font-weight: bold;
+	padding-top: 20px;
+	display: block;
+}
+.Motorcycle #lblTitle,
+.PA #lblTitle,
+.Home #lblTitle,
+.Travel #lblTitle {
+	margin-left: 46px;
+}
+#requirements {
+width: 90%;
+margin: 0 auto;
+}
+#CtlLogin1_pnlNormal {
+        margin-top:-15px;
+}
+.sos-help {background:#e0ffcc; border:1px solid #75bb49; border-radius:10px; font-size:11px; padding:10px; margin-bottom:20px;}
+.sos-help img {float:left; margin-left: 2px; margin-right:13px;}
+
+.notes {
+    background: none repeat scroll 0 0 #FFE8CD;
+    border: 1px solid #F69220;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: normal;
+    margin-top: 10px;
+    padding: 10px;
+text-align: left;
+}
+
+.notes img {
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 30px;
+}
+
+.DataMisMatch
+{
+    background-color: #FFE0E0;
+    color: rgb(196, 0, 0);
+    font-weight: bold;
+}
+
+/*Start: Split Domain*/
+.LogonInfoBox_before {
+	width: 230px;
+	height: 42px;
+	background-color: #bdc3c7;
+	border-radius:0px 0px 5px 5px;
+}
+.LogonInfoBox_before .userIcon {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 19px;
+	height: 19px;
+	background-image: URL("../images/my-account-icons.png");
+	background-position: -10px -16px;
+}
+.LogonInfoBox_before .logonLink {
+	float: left;
+	margin-top: 12px;
+	margin-left: 8px;
+}
+
+.LogonInfoBox_before .logonLink a {
+	color: #000;
+	text-decoration: none;
+}
+
+.LogonInfoBox_after {
+	width: 230px;
+	height: 42px;
+	background-color: #25abe0;
+	border-radius:0px 0px 5px 5px;
+}
+
+.LogonInfoBox_after .userIcon {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 19px;
+	height: 19px;
+	background-image: URL("../images/my-account-icons.png");
+	background-position: -10px -16px;
+}
+
+.LogonInfoBox_after .welcomeInfo {
+	float: left;
+	width: 165px;
+	margin-left: 8px;
+	color: #fff;
+	font: 12px 'mic_32_new_rgregular', Arial, sans-serif;letter-spacing: 0;
+	padding-top: 5px;
+	line-height: 120%;
+}
+.LogonInfoBox_after .welcomeInfo .userName{
+	font: 16px 'mic_32_new_rgregular', Arial, sans-serif;letter-spacing: 0;
+}
+/*Stop: Split Domain*/

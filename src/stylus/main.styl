@@ -1,18 +1,44 @@
-// Base styles
-@import			"base/variables"
-@import			"base/mixins"
-@import			"base/typography"
-@import			"base/global"
-@import			"base/images"
-@import			"base/grid"
+// Variables
+
+$black =	#000000
+$blue =		#25a8e0
+$white =	#ffffff
+$yellow =	#fad701
+
+$small-bp =	"(min-width: 1075px)"
+
+// Mixins
+
+clearfix()
+	*zoom					1
+
+	&:before,
+	&:after
+		content				""
+		display				table
+
+	&:after
+		clear				both
+
+// Fonts
+
+@font-face
+	font-family				"Mic32Normal"
+	font-style				normal
+	font-weight				400
+	src						url("Mic32New-Rg.ttf") format("truetype")
+
+@font-face
+	font-family				"Mic32Light"
+	font-style				normal
+	font-weight				300
+	src						url("Mic32New-Lt.ttf") format("truetype")
+
+@font-face
+	font-family				"Mic32Medium"
+	font-style				normal
+	font-weight				500
+	src						url("Mic32New-Md.ttf") format("truetype")
 
 // Modules
 @import			"modules/*"
-
-// Page templates
-// @import 		"pages/*"
-
-// For Shame - i.e. hacks that don't really fit anywhere
-@import 		"base/shame"
-
-// No styles here please :)

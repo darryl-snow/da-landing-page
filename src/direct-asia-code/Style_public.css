@@ -1,0 +1,748 @@
+﻿/*********************
+Global Font Style
+**********************/
+.footer_subTitle {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#F79321;
+	}
+a.footerNav:link, a.footerNav:visited, a.footerNav:active{
+	/*color:#F79321;*/
+	text-decoration:none;
+	}
+a.footerNav:hover{
+	color:#F79321;
+	text-decoration:underline;
+	}
+	
+a.footerNavGrey:link, a.footerNavGrey:visited, a.footerNavGrey:active{
+	font-size:12px;
+	color:#626262;
+	text-decoration:none;
+	}
+a.footerNavGrey:hover{
+	font-size:12px;
+	color:#626262;
+	text-decoration:underline;
+	}
+
+a.footerNavPurple:link, a.footerNavPurple:visited, a.footerNavPurple:active{
+	font-size:12px;
+	color:#53247F;
+	text-decoration:none;
+	}
+a.footerNavPurple:hover{
+	font-size:12px;
+	color:#53247F;
+	text-decoration:underline;
+	}
+	
+
+a.footerNavGreen:link, a.footerNavGreen:visited, a.footerNavGreen:active{
+	font-size:12px;
+	color:#75BB49;
+	text-decoration:none;
+	}
+a.footerNavGreen:hover{
+	font-size:12px;
+	color:#75BB49;
+	text-decoration:underline;
+	}
+	
+
+a.footerNavBlue:link, a.footerNavBlue:visited, a.footerNavBlue:active{
+	font-size:12px;
+	color:#25A8E0;
+	text-decoration:none;
+	}
+a.footerNavBlue:hover{
+	font-size:12px;
+	color:#25A8E0;
+	text-decoration:underline;
+	}
+	
+.motor_Hdr {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#F79321;
+	}
+
+.motor_SubHdr {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#474747;
+	}
+
+.motor_SubHdrGrey {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#626262;
+	}
+
+.motor_Orange {
+	color:#F79321;
+	}
+
+.motor_Grey {
+	color:#626262;
+	}
+	
+.motor_White {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	}
+
+.motorTopBg {
+	background-image:url(../images/bg_rd_hdr_top.jpg);
+	background-repeat:no-repeat;
+	}
+	
+.motorBtmBg {
+	background-image:url(../images/bg_rd_hdr_btm.gif);
+	background-repeat:no-repeat;
+	width: 630px;
+	height: 16px;
+	}
+.homeBtmBg {
+	background-image:url(../images/bg_rd_hdr_btm1.gif);
+	background-repeat:no-repeat;
+	width: 630px;
+	height: 16px;
+	}
+
+.tbBtmPad {
+	padding-bottom:10px;
+}
+
+/*********************
+Care
+*********************/	
+.care_Hdr {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#25A8E0;
+	}
+
+.care_SubHdrGrey {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#626262;
+	}
+.careBtmBg {
+	background-image:url(../images/bg_rd_hdr_btm.gif);
+	background-repeat:no-repeat;
+	width: 630px;
+	height: 16px;
+	}
+
+.care_Blue {
+	color:#25A8E0;
+	}
+	
+/*********************
+Home
+*********************/	
+.home_Hdr {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#75BB49;
+	}
+	
+.home_Green {
+	color:#75BB49;
+	}
+	
+/*********************
+Travel
+*********************/
+.travel_Hdr {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#53247F;
+	}
+	
+/*********************
+Homepage
+**********************/
+
+.homeFlash {
+	background-image:url(../images/home_dummie_flash.jpg);
+	background-repeat:no-repeat;
+	height:223px;
+	}
+
+.homeFlash1 {
+	background-image:url(../images/home_dummie_flash1.jpg);
+	background-repeat:no-repeat;
+	height:188px;
+	}
+	
+.buttonMyAccount
+{
+	background-image:url(../images/btnMyAccount_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:64px;
+	width:210px;
+}
+.buttonMyAccount:hover
+{
+	background-image:url(../images/btnMyAccount_on.gif);
+}
+
+.homepage .buttonMyAccount
+{
+	background-image:url(../images/btnMyAccount_Home.png);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:57px;
+	width:224px;
+	margin: 5px 0px;
+}
+.homepage .buttonMyAccount:hover
+{
+	background-image:url(../images/btnMyAccount_Homeon.png);
+}
+
+.buttonMyAccountSelected
+{
+	background-image:url(../images/btnMyAccount_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:64px;
+	width:206px;
+}
+
+.buttonMakeAClaim
+{
+	background-image:url(../images/btnMakeClaim_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:64px;
+	width:210px;
+}
+.buttonMakeAClaim:hover
+{
+	background-image:url(../images/btnMakeClaim_on.gif);
+}
+
+.homepage .buttonMakeAClaim
+{
+	background-image:url(../images/btnMakeAClaim_Home.png);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:57px;
+	width:224px;
+	margin: 5px 0px;
+}
+.homepage .buttonMakeAClaim:hover
+{
+	background-image:url(../images/btnMakeAClaim_Homeon.png);
+}
+
+.buttonMakeAClaimSelected
+{
+	background-image:url(../images/btnMakeClaim_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:64px;
+	width:206px;
+}
+
+.buttonGetInstantQuote
+{
+	background-image:url(../images/btnGetInstantQuote_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:60px;
+	width:210px;
+}
+.buttonGetInstantQuote:hover
+{
+	background-image:url(../images/btnGetInstantQuote_on.gif);
+}
+
+.homepage .buttonGetInstantQuote
+{
+	background-image:url(../images/btnBuyOnline_Home.png);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:57px;
+	width:224px;
+	margin: 5px 0px;
+}
+.homepage .buttonGetInstantQuote:hover
+{
+	background-image:url(../images/btnBuyOnline_Homeon.png);
+}
+
+.buttonGetInstantQuoteSelected
+{
+	background-image:url(../images/btnGetInstantQuote_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:60px;
+	width:206px;
+}
+
+
+/*********************
+Make Claim
+**********************/
+
+.contentPadding {
+	padding:10px 20px 20px 20px;
+	}
+/*
+.buttonMakeclaim_policies
+{
+	background-image:url(../images/btn_makeclaim_policies_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+.buttonMakeclaim_policies:hover
+{
+	background-image:url(../images/btn_makeclaim_policies_on.gif);
+}
+.buttonMakeclaim_policiesSelected
+{
+	background-image:url(../images/btn_makeclaim_policies_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+
+.buttonMakeclaim_proposals
+{
+	background-image:url(../images/btn_makeclaim_proposals_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+.buttonMakeclaim_proposals:hover
+{
+	background-image:url(../images/btn_makeclaim_proposals_on.gif);
+}
+.buttonMakeclaim_proposalsSelected
+{
+	background-image:url(../images/btn_makeclaim_proposals_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+
+.buttonMakeclaim_invitation
+{
+	background-image:url(../images/btn_makeclaim_invitation_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+.buttonMakeclaim_invitation:hover
+{
+	background-image:url(../images/btn_makeclaim_invitation_on.gif);
+}
+.buttonMakeclaim_invitationSelected
+{
+	background-image:url(../images/btn_makeclaim_invitation_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+
+.buttonMakeclaim_claimStatus
+{
+	background-image:url(../images/btn_makeclaim_claimStatus_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+.buttonMakeclaim_claimStatus:hover
+{
+	background-image:url(../images/btn_makeclaim_claimStatus_on.gif);
+}
+.buttonMakeclaim_claimStatusSelected
+{
+	background-image:url(../images/btn_makeclaim_claimStatus_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+
+.buttonMakeclaim_profiledetail
+{
+	background-image:url(../images/btn_makeclaim_profiledetail_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+.buttonMakeclaim_profiledetail:hover
+{
+	background-image:url(../images/btn_makeclaim_profiledetail_on.gif);
+}
+.buttonMakeclaim_profiledetailSelected
+{
+	background-image:url(../images/btn_makeclaim_profiledetail_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+
+.buttonMakeclaim_Claim
+{
+	background-image:url(../images/btn_makeclaim_Claim_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+.buttonMakeclaim_Claim:hover
+{
+	background-image:url(../images/btn_makeclaim_Claim_on.gif);
+}
+.buttonMakeclaim_ClaimSelected
+{
+	background-image:url(../images/btn_makeclaim_Claim_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	height:62px;
+	width:210px;
+}
+*/
+/*********************
+Your View
+**********************/
+
+	
+#listBreak {
+	width:100%;
+	height:50px;
+	background-image:url(../images/lineBreak.gif);
+	background-position:center;
+	background-repeat:repeat-x;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	left:0px;
+}
+	
+/*********************
+Product
+**********************/
+
+.buttonProductTopNav01
+{
+	background-image:url(../images/btnTopProduct01_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:76px;
+	height:63px;
+}
+.buttonProductTopNav01:hover
+{
+	background-image:url(../images/btnTopProduct01_on.gif);
+}
+.buttonProductTopNav01Selected
+{
+	background-image:url(../images/btnTopProduct01_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:76px;
+	height:63px;
+}
+
+.buttonProductTopNav02
+{
+	background-image:url(../images/btnTopProduct02_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:77px;
+	height:63px;
+}
+.buttonProductTopNav02:hover
+{
+	background-image:url(../images/btnTopProduct02_on.gif);
+}
+.buttonProductTopNav02Selected
+{
+	background-image:url(../images/btnTopProduct02_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:77px;
+	height:63px;
+}
+
+.buttonProductTopNav03
+{
+	background-image:url(../images/btnTopProduct03_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:79px;
+	height:63px;
+}
+.buttonProductTopNav03:hover
+{
+	background-image:url(../images/btnTopProduct03_on.gif);
+}
+.buttonProductTopNav03Selected
+{
+	background-image:url(../images/btnTopProduct03_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:79px;
+	height:63px;
+}
+
+.buttonProductTopNav04
+{
+	background-image:url(../images/btnTopProduct04_off.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:80px;
+	height:63px;
+}
+.buttonProductTopNav04:hover
+{
+	background-image:url(../images/btnTopProduct04_on.gif);
+}
+.buttonProductTopNav04Selected
+{
+	background-image:url(../images/btnTopProduct04_on.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:80px;
+	height:63px;
+}
+
+.rightPanelMotorInsurance
+{
+	background-image:url(../images/RightPanels/bg_links1.gif);
+	background-repeat:no-repeat;
+	background-color:Transparent;
+	border-style: none;
+	cursor:pointer;
+	width:210px;
+	height:26px;
+	padding:0px 0px 3px 20px;
+}
+.rightPanelMotorInsurance: hover
+{
+	color: Black;
+}
+
+.rightPanelMotorInsurancetxtSelected
+{
+	font-weight:bold !important;
+}
+a.rightPanelMotorInsurancetxt:hover { 
+	color: #6D6D6F;
+	text-decoration:none;
+	font-weight:bold;
+}
+a.rightPanelMotorInsurancetxt:active, a.rightPanelMotorInsurancetxt:visited, a.rightPanelMotorInsurancetxt:link {
+	color: #6D6D6F;
+	text-decoration:none;
+}
+
+/*********************
+Loan Protector
+**********************/
+
+.hdrPolicyDetail {
+	height:52px;
+	background-image:url(../images/Titles/tl_careQuotation.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+.policyFormBorder {
+	border:#CCC solid 1px;
+	border-collapse:collapse;
+	height:28px;
+	padding:3px 0px 0px 3px;
+}
+
+.policyFormWidth100 {
+	width:100px;
+}
+
+.policyFormWidth350 {
+	width:350px;
+}
+
+.policyFormWidth352 {
+	width:352px;
+}
+
+.policyFormWidth180 {
+	width:180px;
+}
+
+.policyFormWidth154 {
+	width:154px;
+}
+.tableBorderGrey {
+	border: 1px #CECECE solid;
+	border-collapse:collapse;
+}
+.tableGreyPadding {
+	padding:5px 0px 5px 20px;
+}
+
+ul.checkBullet {
+padding: 0px;
+margin-left: 0px;
+list-style:none;
+}
+.checkBullet li { 
+background: url(../images/icon_tick_orange.png) left center no-repeat;
+padding: 0px;
+padding-left: 25px;
+padding-top: 8px;
+padding-bottom: 5px;
+}
+ul.orangeBullet{
+padding: 0px;
+margin-left: 0px;
+list-style:none;
+}
+
+#more {
+	margin-top: 20px;
+	width: 50%;
+	border-top-width: 1px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#more .next {
+	text-decoration: none;
+	color: #626262;
+	font-weight: bold;
+}
+
+
+
+a.siteMapNav:link, a.siteMapNav:visited, a.siteMapNav:active{
+	color:#787878;
+	text-decoration:none;
+	}
+a.siteMapNav:hover{
+	color:#F79321;
+	text-decoration:underline;
+	}
+
+a.siteMapNavOrange:link, a.siteMapNavOrange:visited, a.siteMapNavOrange:active{
+	color:#F79321;
+	text-decoration:none;
+	}
+a.siteMapNavOrange:hover{
+	color:#F79321;
+	text-decoration:underline;
+	}
+	
+a.siteMapNavBlue:link, a.siteMapNavBlue:visited, a.siteMapNavBlue:active{
+	color:#25A8E0;
+	text-decoration:none;
+	}
+a.siteMapNavBlue:hover{
+	color:#25A8E0;
+	text-decoration:underline;
+	}
+	
+a.siteMapNavPurple:link, a.siteMapNavPurple:visited, a.siteMapNavPurple:active{
+	color:#53247F;
+	text-decoration:none;
+	}
+a.siteMapNavPurple:hover{
+	color:#53247F;
+	text-decoration:underline;
+	}
+	
+a.siteMapNavGreen:link, a.siteMapNavGreen:visited, a.siteMapNavGreen:active{
+	color:#75BB49;
+	text-decoration:none;
+	}
+a.siteMapNavGreen:hover{
+	color:#75BB49;
+	text-decoration:underline;
+	}
