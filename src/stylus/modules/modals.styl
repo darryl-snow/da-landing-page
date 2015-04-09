@@ -1,1 +1,122 @@
-.modal
+.banner-module-modal
+	bottom						0
+	display						none
+	font-family				"Mic32Normal", sans-serif
+	left						0
+	opacity						1
+	outline						none
+	overflow-x					hidden
+	overflow-y					auto
+	position					fixed
+	right						0
+	top							0
+	transition					0.3s all ease-in-out
+	z-index						500
+
+	&-backdrop
+		background				$black
+		bottom					0
+		left					0
+		opacity					0
+		position				absolute
+		right					0
+		top						0
+		transition				0.3s all ease-in-out
+		transition-delay 		100
+
+	&-dialog
+		relative()
+		border-radius			4px
+		box-shadow				0 2px 5px rgba($black, 0.5)
+		margin					30px auto
+		max-width				100%
+		opacity					0
+		overflow				hidden
+		transform				translate(0, -25%)
+		transition				0.3s all ease-in-out
+		transition-delay 		100
+		width					600px
+
+		@media $small-bp
+			width				810px
+
+	&-content
+		relative()
+		background				$white
+		background-clip			padding-box
+		outline					none
+
+	&-header
+		clearfix()
+		background				$white
+		border-bottom			1px solid #e5e5e5
+		padding					10px 30px
+		
+		@media $small-bp
+			padding				35px 70px
+
+		&-image,
+		&-text
+			float				left
+			
+		&-image
+			margin-right		25px
+			width				52px
+			
+		&-text
+			width				260px
+			
+			@media $small-bp
+				width			440px
+
+			h2
+				font-family		"Mic32Light"
+				font-size		1.5em
+				margin			0 0 5px 0
+				text-shadow		0 1px 1px rgba($black, 0.2)
+				
+				@media $small-bp
+					font-size	2em
+					margin		0 0 20px 0
+
+			p
+				color			#707070
+				font-size		14px
+				margin			0
+				
+				@media $small-bp
+					font-size	18px
+
+	&-body
+		background				#f2f2f2
+		padding					10px 30px
+		
+		@media $small-bp
+			padding				35px 70px
+
+		&-extra-padding
+			padding				0 70px
+			
+			p
+				color			#707070
+				font-family		"Mic32Light"
+				font-size		24px
+				margin			0 0 12px 0
+
+	&.show
+
+		.banner-module-modal-dialog
+			opacity				1
+			transform			translate(0,0)
+
+		.banner-module-modal-backdrop
+			opacity				0.5
+
+body
+	
+	&.banner-module-modal-open
+		overflow				hidden
+		
+		.banner-module-modal
+			overflow-x			hidden
+			overflow-y			auto

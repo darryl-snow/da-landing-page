@@ -131,8 +131,20 @@ gulp.task "images", ->
 
 gulp.task "copy-files", ->
 	
-	gulp.src Config.src + "lib/**/*"
-	.pipe gulp.dest Config.build + "lib"
+	gulp.src Config.src + "lib/formstone/src/js/core.js"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "lib/formstone/src/js/touch.js"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "lib/formstone/src/js/dropdown.js"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "lib/jquery/dist/jquery.min.js"
+	.pipe gulp.dest Config.build + "scripts"
+
+	gulp.src Config.src + "lib/formstone/dist/css/dropdown.css"
+	.pipe gulp.dest Config.build + "styles"
 
 	gulp.src Config.src + "fonts/*"
 	.pipe gulp.dest Config.build + "styles"

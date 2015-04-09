@@ -3,7 +3,7 @@
 	height					970px
 	font-family				"Mic32Normal", sans-serif
 	margin					0 auto 25px auto
-	max-width				100%
+	// max-width				100%
 	overflow				hidden
 	width					510px
 	
@@ -43,7 +43,7 @@
 		
 		@media $small-bp
 			height			100%
-			padding			30px
+			padding			29px
 			width			400px
 
 		h1
@@ -74,7 +74,7 @@
 
 		p
 			font-family		"Mic32Light", sans-serif
-			margin			5px 0 5px 0
+			margin			7px 0 7px 0
 
 		.small
 			display			block
@@ -107,7 +107,7 @@
 		background			$yellow
 		border				none
 		box-shadow			none
-		color				$black
+		color				$black !important
 		cursor				pointer
 		font-family			"Mic32Medium", sans-serif
 		font-size			20px
@@ -115,6 +115,14 @@
 		text-decoration		none
 		text-shadow			none
 		text-transform		uppercase
+
+		&--reviews
+			background		$blue
+			border-radius	4px
+			color			$white !important
+			font-family		"Mic32Normal"
+			font-size		16px
+			padding			15px 35px
 
 	&-icon
 		display				inline-block

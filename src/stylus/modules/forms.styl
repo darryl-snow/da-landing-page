@@ -1,0 +1,122 @@
+.banner-module-form
+
+	&-input-group
+		margin-bottom			30px
+
+	label
+		color					$black
+		display					block
+		font-family				"Mic32Medium"
+		font-size				18px
+		margin					0 0 15px 0
+
+		&.label-checkbox
+			font-family			"Mic32Normal"
+			font-size			14px
+
+	input[type="text"],
+	input[type="email"]
+		background				$white
+		border					1px solid #d7d7d7
+		border-radius			4px
+		box-shadow				none
+		color					#707070
+		font-size				14px
+		max-width				100%
+		padding					10px
+		width					100%
+
+		@media $small-bp
+			width				240px
+
+	input[type="checkbox"]
+		display					none
+
+	.fake-checkbox
+		background				$white
+		border					1px solid $blue
+		border-radius			50%
+		cursor					pointer
+		display					inline-block
+		height					20px
+		margin					0 15px 0 0
+		vertical-align			top
+		width					20px
+
+		+ span
+			cursor				pointer
+			display				inline-block
+			line-height			1.625
+			vertical-align		top
+			width				80%
+
+	input[type="checkbox"]:checked + .fake-checkbox
+		background				$blue
+
+	.fs-dropdown
+		display					inline-block
+		margin-right			20px
+		width					100%
+
+		@media $small-bp
+			width				150px
+
+	.fs-dropdown-selected
+		background				$white
+		border					1px solid #d7d7d7
+		border-radius			4px
+		box-shadow				0 1px 1px rgba($black, 0.2)
+		color					#707070
+		font-size				14px
+		outline					none
+
+		&:before
+			background			$blue
+			content				""
+			display				block
+			height				100%
+			position			absolute
+			right				0
+			top					0
+			width				30px
+
+		&:after
+			border-top			5px solid $white
+			right				9px
+
+	.fs-dropdown-item
+		border					none
+		box-shadow				none
+		
+		&:hover
+			background			#f2f2f2
+
+	.error-msg
+		display					none
+		background				$white
+		box-sizing				border-box
+		color					$red
+		margin					3px 0 0 0
+		padding					3px 10px
+		max-width				100%
+		width					100%
+
+		@media $small-bp
+			width				240px
+
+	.error
+		.error-msg
+			display				block
+
+.banner-module-button--send
+	background-color			$green
+	border-radius				4px
+	box-shadow					0 2px 1px rgba($black, 0.2)
+	color						$white !important
+	font-family					"Mic32Normal"
+	font-size					17px
+	padding						20px 0
+	width						230px
+
+	img
+		margin-left				10px

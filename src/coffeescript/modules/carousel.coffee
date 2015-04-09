@@ -10,21 +10,23 @@ class Carousel
 		@numberOfSlides = @el.carouselSlides.length
 		@currentSlide = 0
 
-		@setupCarousel()
 		@addNavigation()
 		@addPagination()
 
-		window.addEventListener "resize", =>
-			console.log "resizing"
+		setTimeout =>
 			@setupCarousel()
+		, 100
 
 	setupCarousel: ->
 
 		@el.carouselSlideContainer.style.width = (100 * @numberOfSlides) + "%"
 
 		for slide in @el.carouselSlides
-			slide.style.width = @el.carousel.clientWidth
-			slide.style.height = @el.carousel.clientHeight
+			slide.style.width = @el.carousel.clientWidth + "px"
+			slide.style.height = @el.carousel.clientHeight + "px"
+
+		window.addEventListener "resize", =>
+			@setupCarousel()
 
 	addNavigation: ->
 
@@ -81,7 +83,7 @@ class Carousel
 				@goto e.target.getAttribute "href"
 
 	next: ->
-		if @currentSlide isnt @numberOfSlides - 1
+		if (@currentSlide < @numberOfSlides - 1)
 			@currentSlide++
 			@el.carouselSlideContainer.style.marginLeft = (-1 * @currentSlide * 100) + "%"
 			@updatePagination()
@@ -89,7 +91,7 @@ class Carousel
 			@goto 0
 
 	previous: ->
-		if @currentSlide isnt 0
+		if @currentSlide > 0
 			@currentSlide--
 			@el.carouselSlideContainer.style.marginLeft = (-1 * @currentSlide * 100) + "%"
 			@updatePagination()
@@ -97,9 +99,10 @@ class Carousel
 			@goto @numberOfSlides - 1
 
 	goto: (index) ->
-		@currentSlide = index
-		@el.carouselSlideContainer.style.marginLeft = (-1 * @currentSlide * 100) + "%"
-		@updatePagination()
+		if index >= 0 and index < @numberOfSlides
+			@currentSlide = index
+			@el.carouselSlideContainer.style.marginLeft = (-1 * @currentSlide * 100) + "%"
+			@updatePagination()
 
 	updatePagination: ->
 

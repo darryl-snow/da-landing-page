@@ -1,3 +1,4 @@
+link(href="styles/dropdown.css", rel="stylesheet")
 link(href="styles/banner-module.css", rel="stylesheet")
 
 .banner-module
@@ -9,16 +10,16 @@ link(href="styles/banner-module.css", rel="stylesheet")
 				li#slide1.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-1.jpg);")
 					a(href="", title="")
 						span View Clemen's Story
-				li#slide2.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-1.jpg);")
+				li#slide2.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-2.jpg);")
 					a(href="", title="")
 						span View Clemen's Story
-				li#slide3.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-1.jpg);")
+				li#slide3.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-3.jpg);")
 					a(href="", title="")
 						span View Clemen's Story
-				li#slide4.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-1.jpg);")
+				li#slide4.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-4.jpg);")
 					a(href="", title="")
 						span View Clemen's Story
-				li#slide5.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-1.jpg);")
+				li#slide5.carousel-slide(style="background-image:url(images/banner-module/carousel-slide-5.jpg);")
 					a(href="", title="")
 						span View Clemen's Story
 
@@ -56,7 +57,99 @@ link(href="styles/banner-module.css", rel="stylesheet")
 					p Visit us in person
 					p.small 88 South Bridge Road, Singapore 058716
 
-.banner-module-modal#modal-form hello world
-.banner-module-modal#modal-thankyou thank you
+//- FORM MODAL
 
+.banner-module-modal.fade#modal-form(role="dialog", aria-labelledby="modal-form-title", aria-hidden="true")
+	.banner-module-modal-dialog
+		.banner-module-modal-content
+			.banner-module-modal-header
+				.banner-module-modal-header-image
+					img(src="images/banner-module/contact-details.gif")
+				.banner-module-modal-header-text
+					h2#modal-form-title Your contact details
+					p Leave us your name and number and we'll call you to give you a quote on your car insurance.
+
+			.banner-module-modal-body
+
+				#contact-details-form.banner-module-form
+
+					.banner-module-form-input-group
+						label(for="contact-details-name") Name
+						input#contact-details-name(type="text", name="contact-details-name", placeholder="Your Name", required)
+						p.error-msg This is required information
+
+					.banner-module-form-input-group
+						label(for="contact-details-phone") Phone Number
+						input#contact-details-phone(type="text", name="contact-details-phone", placeholder="Phone Number", required)
+						p.error-msg This is required information
+
+					.banner-module-form-input-group
+						label(for="contact-details-email") Email Address
+						input#contact-details-email(type="email", name="contact-details-email", placeholder="Your Name", required)
+						p.error-msg This is required information
+
+					.banner-module-form-input-group
+						label(for="contact-details-expiry-month") When does your current insurance expire?
+						select#contact-details-expiry-month(name="contact-details-expiry-month", data-label="Month")
+							option(value="1") January
+							option(value="2") February
+							option(value="3") March
+							option(value="4") April
+							option(value="5") May
+							option(value="6") June
+							option(value="7") July
+							option(value="8") August
+							option(value="9") September
+							option(value="10") October
+							option(value="11") November
+							option(value="12") December
+						select#contact-details-expiry-year(name="contact-details-expiry-year", data-label="Year")
+							- for (var i = 2015; i < 2050; i++)
+								option(value="#{i}") #{i}
+
+					.banner-module-form-input-group
+						label(for="contact-details-contact-days") What's a good time to call?
+						select#contact-details-contact-days(name="contact-details-contact-days")
+							option(value="Week days") Week days
+							option(value="Weekends") Weekends
+							option(value="Any day") Any day
+						select#contact-details-contact-time(name="contact-details-contact-time")
+							option(value="Mornings") Mornings
+							option(value="Afternoons") Afternoons
+							option(value="Evenings", selected) Evenings
+							option(value="Any time") Any time
+
+					.banner-module-form-input-group
+
+						label.label-checkbox(for="contact-details-optin")
+							input#contact-details-optin(type="checkbox", name="contact-details-optin")
+							.fake-checkbox
+							span By continuing with this application you agree to receive marketing materials from DirectAsia.com. If you do NOT wish to receive marketing materials from DirectAsia.com, please tick this box.
+
+					.banner-module-form-input-group
+						button#contact-details-send.banner-module-button.banner-module-button--send(type="button", name="contact-details-send") Send
+							img(src="images/banner-module/right-arrow2.gif")
+
+//- THANK YOU MODAL
+
+.banner-module-modal.fade#modal-thank-you(role="dialog", aria-labelledby="modal-thank-you-title", aria-hidden="true")
+	.banner-module-modal-dialog
+		.banner-module-modal-content
+			.banner-module-modal-header
+				.banner-module-modal-header-image
+					img(src="images/banner-module/contact-check.gif")
+				.banner-module-modal-header-text
+					h2#modal-thank-you-title Thanks 
+						span#modal-thank-you-name
+						| !
+					p Speak to you soon
+			.banner-module-modal-body
+				.banner-module-modal-body-extra-padding
+					p See what our customers are saying about us.
+					button.banner-module-button.banner-module-button--reviews(href="") Read our reviews
+
+script(src="scripts/jquery.min.js")
+script(src="scripts/core.js")
+script(src="scripts/touch.js")
+script(src="scripts/dropdown.js")
 script(src="scripts/banner-module.js")
