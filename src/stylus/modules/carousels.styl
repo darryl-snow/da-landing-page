@@ -72,7 +72,7 @@
 				right			0
 				top				0
 				width			100%
-				
+
 	&-navigation
 		background				url(../images/banner-module/left-arrow.png) no-repeat 0 0
 		border					none
@@ -89,3 +89,23 @@
 			background			url(../images/banner-module/right-arrow.png) no-repeat 0 0
 			left				auto
 			right				10px
+			
+	&--retarget
+		
+		.carousel-navigation
+			background			url(../images/banner-module/left-arrow--dark.png) no-repeat 0 0 !important
+			
+			&-next
+				background		url(../images/banner-module/right-arrow--dark.png) no-repeat 0 0 !important
+			
+		.carousel-pagination-item
+			background			$yellow !important
+			border-radius		50%
+			height				10px !important
+			margin				0 10px 0 0 !important
+			opacity				0.4
+			width				10px !important
+			
+			&.active
+				border			none !important
+				opacity			1

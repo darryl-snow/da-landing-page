@@ -1,0 +1,1531 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=EmulateIE7')
+		title Instant Car Insurance Quotes and Buy Online | DirectAsia.com
+		meta(name='description', content='Get an Instant Free Online Car Insurance Quote, Save Money and Receive Your Full Cover. Cheap Car Insurance from Direct Asia in Singapore.')
+		meta(name='robots', content='noindex,nofollow')
+		//if IE
+			link(href='styles/IE.css', type='text/css', rel='stylesheet')
+
+		script#undefined(type='text/javascript', async='', src='scripts/inpage_linkid.js')
+		script(type='text/javascript', async='', src='scripts/ga.js')
+		script(type='text/javascript').
+			var iplobserverstart = new Date();var iplperformancetiming = 1;
+
+		script(type='text/javascript', language='javascript', src='scripts/jquery-1.3.2.min.js')
+		script(type='text/javascript', language='javascript', src='scripts/jquery.floatobject-1.2.js')
+		script(type='text/javascript', language='javascript', src='scripts/Common.js')
+		script(type='text/javascript', src='scripts/1034650491.js')
+		script(type='text/javascript').
+			function proceedToLowmileage() {
+				$("#btnProceedToLowMileage").click();
+				top.__ShowLoadingDig();
+				setTimeout(function() {
+					HighlightReadonlyTextBox();
+				}, 100);
+			}
+			
+			function proceedToStandard() {
+				$("#btnStandardCar").click();
+				top.__ShowLoadingDig();
+				setTimeout(function() {
+					HighlightReadonlyTextBox();
+				}, 100);
+			}
+			
+			function proceedToSOS() {
+				$("#btnSOS").click();
+				top.__ShowLoadingDig();
+				setTimeout(function() {
+					HighlightReadonlyTextBox();
+				}, 100);
+			}
+			
+			function showHideAdditionalQuestions(btnId, btnQ1Id, btnQ2Id, btnQ3Id) {
+				var list = document.getElementById(btnId); //Client ID of the radiolist
+				var inputs = list.getElementsByTagName("input");
+				var selected;
+				for (var i = 0; i < inputs.length; i++) {
+					if (inputs[i].checked) {
+						selected = inputs[i];
+						break;
+					}
+				}
+				if (selected) {
+					$("#trProduct").show();
+					if (selected.value == 'Y') {
+						document.getElementById('dvAditionalQQ').style.display = ""; // to show
+						document.getElementById('dvNextButton').style.display = "none";
+						//self.scrollTo(0,750);
+						$('html,body').animate({
+							scrollTop: 750
+						}, 'slow');
+						showHideProductDescription('rblQQCarQ6', 'rblQQCarQ5', 'rblQQCarQ4');
+					} else {
+						document.getElementById('dvAditionalQQ').style.display = "none"; // to hide
+						document.getElementById('dvNextButton').style.display = "";
+						document.getElementById('lowmileage').style.display = "none"; // to hide
+						document.getElementById('SOS').style.display = "none"; // to hide
+						document.getElementById('standardcar').style.display = "none" // to hide
+						var listQ1 = document.getElementById(btnQ1Id);
+						var inputsQ1 = listQ1.getElementsByTagName("input");
+						for (var i = 0; i < inputsQ1.length; i++) {
+							inputsQ1[i].checked = false;
+						}
+						var listQ2 = document.getElementById(btnQ2Id);
+						var inputsQ2 = listQ2.getElementsByTagName("input");
+						for (var i = 0; i < inputsQ2.length; i++) {
+							inputsQ2[i].checked = false;
+						}
+						var listQ3 = document.getElementById(btnQ3Id);
+						var inputsQ3 = listQ3.getElementsByTagName("input");
+						for (var i = 0; i < inputsQ3.length; i++) {
+							inputsQ3[i].checked = false;
+						}
+					}
+				} else {
+					$("#trProduct").hide();
+				}
+			}
+			
+			function cvReqQ6(source, args) {
+				var rblValue = ValidatorGetValue(source.controltovalidate);
+				var list = document.getElementById('rblQQCarQ3'); //Client ID of the radiolist
+				var inputs = list.getElementsByTagName("input");
+				var selected;
+				for (var i = 0; i < inputs.length; i++) {
+					if (inputs[i].checked) {
+						selected = inputs[i];
+						break;
+					}
+				}
+				if (selected) {
+					if (selected.value == 'Y') {
+						if (rblValue == '') {
+							args.IsValid = false;
+							return;
+						}
+					}
+				}
+				args.IsValid = true;
+			}
+			
+			function showHideProductDescription(btnQ1Id, btnQ2Id, btnQ3Id) {
+				var ma = $(":radio:checked", "#rblQQCarQ3").attr("value");
+				if (ma != "Y")
+					return;
+				var listQ1 = document.getElementById(btnQ1Id);
+				var inputsQ1 = listQ1.getElementsByTagName("input");
+				var selectedQ1;
+				for (var i = 0; i < inputsQ1.length; i++) {
+					if (inputsQ1[i].checked) {
+						selectedQ1 = inputsQ1[i];
+						break;
+					}
+				}
+				var listQ2 = document.getElementById(btnQ2Id);
+				var inputsQ2 = listQ2.getElementsByTagName("input");
+				var selectedQ2;
+				for (var i = 0; i < inputsQ2.length; i++) {
+					if (inputsQ2[i].checked) {
+						selectedQ2 = inputsQ2[i];
+						break;
+					}
+				}
+				var listQ3 = document.getElementById(btnQ3Id);
+				var inputsQ3 = listQ3.getElementsByTagName("input");
+				var selectedQ3;
+				for (var i = 0; i < inputsQ3.length; i++) {
+					if (inputsQ3[i].checked) {
+						selectedQ3 = inputsQ3[i];
+						break;
+					}
+				}
+				if (selectedQ1 && selectedQ2 && selectedQ3) {
+					if (selectedQ1.value == 'N' && selectedQ2.value == 'N' && selectedQ3.value == 'N') {
+						document.getElementById('lowmileage').style.display = "none"; // to hide
+						document.getElementById('SOS').style.display = "none"; // to hide
+						document.getElementById('standardcar').style.display = ""; // to show
+						//self.scrollTo(0,900);
+						if ($("#trProduct").is(':visible')) {
+							$('html,body').animate({
+								scrollTop: 900
+							}, 'slow');
+						}
+					} else if (selectedQ1.value == 'Y' && selectedQ2.value == 'N' && selectedQ3.value == 'N') {
+						document.getElementById('lowmileage').style.display = ""; // to show
+						document.getElementById('SOS').style.display = "none"; // to hide
+						document.getElementById('standardcar').style.display = "none" // to hide
+							//self.scrollTo(0,900);
+						if ($("#trProduct").is(':visible')) {
+							$('html,body').animate({
+								scrollTop: 1150
+							}, 'slow');
+						}
+					} else {
+						document.getElementById('lowmileage').style.display = "none"; // to hide
+						document.getElementById('SOS').style.display = ""; // to hide
+						document.getElementById('standardcar').style.display = "none" // to hide
+							//self.scrollTo(0,900);
+						if ($("#trProduct").is(':visible')) {
+							$('html,body').animate({
+								scrollTop: 900
+							}, 'slow');
+						}
+					}
+				}
+			}
+
+
+		link(href='styles/SpryCollapsiblePanel.css', type='text/css', rel='stylesheet')
+		link(href='styles/SpryTabbedPanels.css', type='text/css', rel='stylesheet')
+		link(href='styles/Style.css', type='text/css', rel='stylesheet')
+		link(href='styles/Style_print.css', type='text/css', rel='stylesheet')
+		link(href='styles/Style_public.css', type='text/css', rel='stylesheet')
+		link(href='styles/temp.css', type='text/css', rel='stylesheet')
+		//- link(href='styles/WebResource.axd', type='text/css', rel='stylesheet')
+		script(type='text/javascript').
+			var _gaq = _gaq || [];var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';_gaq.push(['_require', 'inpage_linkid', pluginUrl]);_gaq.push(['_setAccount', 'UA-19459607-1']);_gaq.push(['_setDomainName', 'directasia.com']);_gaq.push(['_setAllowLinker', true]);_gaq.push(['_setSampleRate', 100]);_gaq.push(['_setSiteSpeedSampleRate', 100]);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+	body.Car(onkeydown='__KeyDown(event)')
+		script#clobscript(type='text/javascript', src='scripts/clobs.js')
+
+
+		noscript
+			img(width='1', height='1', style='border: 0', src='https://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;amp;ActivityID=67623&amp;amp;ns=1')
+		// Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup
+		script(type='text/javascript').
+			/* <![CDATA[ */
+			var google_conversion_id = 1019956370;
+			var google_conversion_label = "2u22CMbR1wIQkpmt5gM";
+			var google_custom_params = window.google_tag_params;
+			var google_remarketing_only = true;
+			/* ]]> */
+		script(type='text/javascript', src='scripts/conversion.js')
+		iframe(name='google_conversion_frame', title='Google conversion frame', width='300', height='13', src='scripts/saved_resource.html', frameborder='0', marginwidth='0', marginheight='0', vspace='0', hspace='0', allowtransparency='true', scrolling='no')
+		noscript
+			div(style='display:inline;')
+		form#frmQualifyingQn(name='frmQualifyingQn', method='post', action='', onsubmit='javascript:return WebForm_OnSubmit();')
+			div
+				input#__EVENTTARGET(type='hidden', name='__EVENTTARGET', value='')
+				input#__EVENTARGUMENT(type='hidden', name='__EVENTARGUMENT', value='')
+				input#tm_HiddenField(type='hidden', name='tm_HiddenField', value=';;PK.Framework.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:en-US:905e5054-f527-4695-83fd-6d8de8721ed9:ef52e453;AjaxControlToolkit, Version=1.0.20229.20821, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e:en-US:0cddd10f-c2cc-4ca8-bbf0-9ac863d6704b:e2e86ef9:9ea3f0e2:9e8e87e9:1df13a87:4c9865be:ba594826:757f92c2:3858419b:96741c43:c4c00916:c7c04611:cd120801:38ec41c0')
+				input#__SERVER_VIEWSTATE_KEY(type='hidden', name='__SERVER_VIEWSTATE_KEY', value='d16fe2d7-8e53-4af1-b93f-ad7ecd37c2ac')
+				input#__VIEWSTATE(type='hidden', name='__VIEWSTATE', value='')
+
+			script(type='text/javascript').
+				//<![CDATA[
+				var theForm = document.forms['frmQualifyingQn'];
+				if (!theForm) {
+					theForm = document.frmQualifyingQn;
+				}
+
+				function __doPostBack(eventTarget, eventArgument) {
+					if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+						theForm.__EVENTTARGET.value = eventTarget;
+						theForm.__EVENTARGUMENT.value = eventArgument;
+						theForm.submit();
+					}
+				}
+				//]]>
+
+			script(src='scripts/WebResource(1).axd', type='text/javascript')
+			script(src='scripts/sCode.js', type='text/javascript')
+			script(src='scripts/ScriptResource.axd', type='text/javascript')
+			script(src='scripts/ScriptResource(1).axd', type='text/javascript')
+			script(src='scripts/ScriptResource(2).axd', type='text/javascript')
+			script(src='scripts/CarQualifyingQuestions.aspx', type='text/javascript')
+
+			script(type='text/javascript').
+				//<![CDATA[
+				function WebForm_OnSubmit() {
+					if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+					return true;
+				}
+				//]]>
+
+			div
+				input#__EVENTVALIDATION(type='hidden', name='__EVENTVALIDATION', value='/wEWHAL+raDpAgLh157GBwL0157GBwKWuLSoCwLHuqCKCALh14LGBwL014LGBwKWuKioCwLC0JiKCALh17bGBwL017bGBwKWuJyoCwLZ16eKCALh14rGBwL014rGBwKWuKCoCwKosaKKCAK14fOOCgK14fOOCgKLjL40AouMvjQCsta5UQKy1rlRAuGSxdMJAuGSxdMJApqb6NADApXJzsoHAq3Eg6ECp7tm+mGftbMFe0W/vq+B4Bic76Q=')
+
+			.wrapper
+				.container
+					table.content(border='0', cellpadding='0', cellspacing='0')
+							tr
+								td.pageBorderLeft
+						
+								td(style='padding-right: 10px; padding-left: 10px; padding-bottom: 0px; padding-top: 0px;', valign='top')
+									table(border='0', cellpadding='0', cellspacing='0', width='100%')
+										colgroup
+											col(width='749px')
+									
+											col(width='10px')
+									
+											col(width='10px')
+								
+										tbody
+											tr
+												td(align='right')
+													.LogonInfoBox_before
+														.userIcon
+												
+														.logonLink
+															| you are not logged in
+												
+														.clearfix
+									
+											tr
+												td(style='padding-bottom: 2px;')
+													table#header(border='0', cellpadding='0', cellspacing='0', width='100%')
+														tbody
+															tr
+																td
+																	table(width='100%', cellpadding='0', cellspacing='0', border='0')
+																		tbody
+																			tr
+																				td
+																					a#CtlQuotationHeader1_hyLogoDirectAsia(href='http://www.directasia.com/')
+																						img(src='images/logo_DirectAsia.gif', alt='DirectAsia.com - Insurance Online homepage', style='border-width:0px;')
+																		
+																				td
+																					div(class='/online-insurance/Quotation/titleQuotationMotor')
+																		
+																				td
+														
+																td
+																	img#strapline(src='images/strapline.gif', style='border-width:0px;')
+														
+																td(align='right', valign='bottom')
+																	img#imgQuotationType(src='images/tl_QuotationMotorPhone.gif', style='border-width:0px;')
+										
+												td
+									
+											tr
+												td(valign='top')
+													table(border='0', cellpadding='0', cellspacing='0', width='100%')
+														tbody
+															tr
+																td.gvFrameClearTopLeft
+														
+																td.gvFrameClearTop(valign='bottom')
+														
+																td.gvFrameClearTopRight
+											
+															tr
+																td.gvFrameClearLeft
+														
+																td
+																	.lineBreak
+														
+																td.gvFrameClearRight
+							
+															tr
+																td.gvFrameClearLeft
+														
+																td(style='padding: 10px 4px 10px 4px;')
+																	table#tblQQ(width='100%', cellpadding='0', cellspacing='0', border='0')
+																		colgroup
+																			col(width='10px')
+																	
+																			col
+
+																		tbody
+																			tr
+																				td(colspan='1')
+																					
+																					include banner-module-retarget
+
+																			tr
+																				td(colspan='1', style='height: 30px;')
+																					#dvMainQuestions
+																						table(width='100%', cellpadding='0', cellspacing='0', border='0')
+																							tbody
+																								tr
+																									td
+																							
+																									td
+																										table(width='100%', cellpadding='0', cellspacing='0', border='0')
+																											tbody
+																												tr
+																													td(colspan='1')
+																														div(style='padding-bottom: 2px;')
+																															span#lblTitle.fontBold16 To get started please confirm that:
+																										
+																												tr
+																													td(colspan='1', style='height: 20px;')
+																														.lineBreak
+																										
+																												tr
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ1
+																																			| The main driver of the car is aged 70 and below and has a valid driving licence of at least 2 years.
+																																
+																																		img#imgHelpDriverAge(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																										
+																												tr
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ2 The car is not used for commercial purposes or for hire/reward.
+																																
+																																		img#imgHelpDriverExperience(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																											
+																													td
+																																														
+																												tr
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ7
+																																			| No driver has had any class of licence suspended or cancelled in the last 5 years.
+																																
+																																		img#imgHelpLicenseSuspend(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																																														
+																												tr
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ3
+																																			| The car is registered in Singapore and any modifications it may have are LTA compliant.
+																																
+																																		img#imgHelpRegisteredCarSG(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																																														
+																												tr
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ8
+																																			| You have read and agree to our 
+																																			a(href='http://www.directasia.com/sg/en/onlineinsurance/directasia-security-and-privacy/') Privacy Statement
+																																			| .
+																																														
+																												tr
+																													td(colspan='1', style='height: 20px;')
+																														.lineBreak
+																																														
+																												tr
+																													td
+																														span#SmartLabel1 Please note the policyholder must be the registered owner of the vehicle.
+																												
+																														span#jl
+																																														
+																												tr
+																													td(colspan='1', style='height: 20px;')
+																														.lineBreak
+																																														
+																												tr
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblConFirm
+																																			| Do you consent to the terms of our Privacy Statement and agree that you meet with all of the above requirements?
+																																														
+																												tr
+																													td(style='width: 100%')
+																														span#rblQQCarQ3.QQ_radio_button_list(onclick="javascript:showHideAdditionalQuestions('rblQQCarQ3','rblQQCarQ6','rblQQCarQ5','rblQQCarQ4');")
+																															input#rblQQCarQ3_0(type='radio', name='rblQQCarQ3', value='Y')
+																															label(for='rblQQCarQ3_0') Yes
+																															input#rblQQCarQ3_1(type='radio', name='rblQQCarQ3', value='N')
+																															label(for='rblQQCarQ3_1') No
+																												
+																														span#rfvQ3(style='color:Red;display:none;')
+																												
+																														input#vceQ3_ClientState(type='hidden', name='vceQ3_ClientState')
+																																									
+																									td
+																														
+																			tr
+																				td(colspan='1', style='height: 10px;')
+																					.lineBreak
+																														
+																			tr
+																				td(colspan='1')
+																					#dvAditionalQQ(style='display: none;')
+																						table(width='100%', cellpadding='0', cellspacing='0', border='0')
+																							tbody
+																								tr
+																									td
+																																									
+																									td
+																										table(width='100%', cellpadding='0', cellspacing='0', border='0')
+																											tbody
+																												tr
+																													td(colspan='2', style='height: 20px;')
+																														span#lblAdditonalQuestionsHeader
+																															b
+																																| Please answer a few questions so we can find the most suitable car insurance product for you:
+																																														
+																												tr
+																													td(colspan='2', style='height: 20px;')
+																														.lineBreak
+																																														
+																												tr
+																													td(valign='top', style='padding-top: 3px;')
+																																																
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ6 Do you drive less than 8000 km per year? 
+																																
+																																		img#imgHelpLessThan8000km(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																														
+																																tr
+																																	td(style='width: 100%')
+																																		span#rblQQCarQ6.QQ_radio_button_list(onclick="showHideProductDescription('rblQQCarQ6','rblQQCarQ5','rblQQCarQ4');")
+																																			input#rblQQCarQ6_0(type='radio', name='rblQQCarQ6', value='Y')
+																																			label(for='rblQQCarQ6_0') Yes
+																																			input#rblQQCarQ6_1(type='radio', name='rblQQCarQ6', value='N')
+																																			label(for='rblQQCarQ6_1') No
+																																
+																																		span#cvQ6(style='color:Red;display:none;')
+																																
+																																		input#vceQ6_ClientState(type='hidden', name='vceQ6_ClientState')
+																																														
+																												tr
+																													td(colspan='2', style='height: 20px;')
+																														.lineBreak
+																																														
+																												tr
+																													td(valign='top', style='padding-top: 3px;')
+																																																
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%')
+																																		span#lblQ5
+																																			| Do you or any of the drivers that you want to insure have 2 or more at-fault accidents/claims on this or another vehicle (excluding motorcycles) in the last 3 years?
+																																
+																																		img#imgHelpFaultClaims(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																														
+																																tr
+																																	td(style='width: 100%')
+																																		span#rblQQCarQ5.QQ_radio_button_list(onclick="showHideProductDescription('rblQQCarQ6','rblQQCarQ5','rblQQCarQ4');")
+																																			input#rblQQCarQ5_0(type='radio', name='rblQQCarQ5', value='Y')
+																																			label(for='rblQQCarQ5_0') Yes
+																																			input#rblQQCarQ5_1(type='radio', name='rblQQCarQ5', value='N')
+																																			label(for='rblQQCarQ5_1') No
+																																
+																																		span#cvQ5(style='color:Red;display:none;')
+																																
+																																		input#vceQ5_ClientState(type='hidden', name='vceQ5_ClientState')
+																																														
+																												tr
+																													td(colspan='2', style='height: 20px;')
+																														.lineBreak
+																																														
+																												tr
+																													td(valign='top', style='padding-top: 3px;')
+																																																
+																													td
+																														table(style='width: 100%')
+																															tbody
+																																tr
+																																	td(style='width: 100%;')
+																																		span#lblQ4
+																																			| Has any driver(s) been refused insurance or had it terminated in the last 3 years?
+																																
+																																		img#imgHelpRefusedInsurance(src='images/icon_HelpMotor.gif', style='border-width:0px;')
+																														
+																																tr
+																																	td(style='width: 100%')
+																																		span#rblQQCarQ4.QQ_radio_button_list(onclick="showHideProductDescription('rblQQCarQ6','rblQQCarQ5','rblQQCarQ4');")
+																																			input#rblQQCarQ4_0(type='radio', name='rblQQCarQ4', value='Y')
+																																			label(for='rblQQCarQ4_0') Yes
+																																			input#rblQQCarQ4_1(type='radio', name='rblQQCarQ4', value='N')
+																																			label(for='rblQQCarQ4_1') No
+																																
+																																		span#cvQ4(style='color:Red;display:none;')
+																																
+																																		input#vceQ4_ClientState(type='hidden', name='vceQ4_ClientState')
+
+																									td
+
+																			tr#trProduct(style='display: none;')
+																				td(style='padding: 10px 4px 10px 4px;', colspan='1')
+																					#SOS(style='display: none')
+																						span#lblSOSDesc
+																							#dvSOS(style='width:100%')
+																								center
+																									.car_recommended
+																										h1 SOS Car Insurance
+																										
+																										img(src='images/sos_insurance_qualifying.gif')
+																										
+																										ul
+																											li A Route Back for &apos;SOS Car Insurance&apos; Drivers.
+																											li A Fair Premium.
+																											li Full Coverage.
+																										table.popUpBoaderCommonQualifying(border='0')
+																											tbody
+																												tr
+																													td(align='left')
+																														span.CommonQQPopUpTitles Based on your answers, we recommend our 
+																															strong SOS Car Insurance
+																															| - for those considered &lsquo;high risk&rsquo; drivers by other insurance companies.
+																															
+																													td(align='right', width='250')
+																														input#Button2.proceedSOS(onclick='javascript:__OkButton_Clicked();proceedToSOS();', type='button', value='')
+																														
+																									table.sosrequirements(border='0')
+																										tbody
+																											tr
+																												td(align='left', colspan='2', valign='top')
+																													p.CommonQQPopUpProductHeadersSubHeader1
+																														span
+																															strong SOS Car Insurance
+																													policy is a &apos;named driver&apos; policy and covers:
+																													
+																													ul.CommonQQPopUpProductHeadersDetails
+																														li You the policyholder.
+																															
+																														li The main driver (if he/she is not the policyholder).
+																															
+																														li Up to 2 other drivers (if applicable) who are named on your certificate of insurance and policy schedule.
+																																		
+																					#lowmileage(style='display: none')
+																						span#lblLowmileageDesc
+																							.lowmileage_recommended
+																								h1     Low Mileage Car Insurance
+																						
+																								img(src='images/lowmileage_insurance_qualifying.gif')
+																						
+																								ul.usp
+																									li      Drive Less, Pay Less.
+																							
+																									li      Comprehensive Coverage
+																							
+																									li      Enhanced Savings.
+																						
+																								table.popUpBoaderCommonQualifying
+																									tbody
+																										tr
+																											td
+																												| Based on your answers (including that you drive less than 8,000 km in one policy year) we recommend our Low Mileage Car Insurance.
+																									
+																											td(align='right', width='250')
+																												input#btnDeleteProcees.proceedlowmileage(onclick='javascript:__OkButton_Clicked();proceedToLowmileage();', style='padding-right: 7px; padding-left: 7px; overflow: visible', type='button')
+																					
+																							.car_panel
+																								h1     Car Insurance
+																						
+																								img(src='images/car_insurance_qualifying.gif')
+																						
+																								ul.usp
+																									li      Unlimited Mileage.
+																							
+																									li      Customisation&nbsp;of Policy.
+																							
+																									li      Competitive Premium.
+																						
+																								table.popUpBoaderCommonQualifying
+																									tbody
+																										tr
+																											td
+																												p Alternatively, you can choose our standard Car Insurance policy for additional flexibility.
+																									
+																											td(align='right', width='250')
+																												input#btnSaveQuotes.proceedstandardcar(onclick='javascript:__OkButton_Clicked();proceedToStandard();', style='padding-right: 7px; padding-left: 7px; overflow: visible', type='button')
+																					
+																							#commonrequirements
+																								table.popUpBoaderCommonQualifying
+																									tbody
+																										tr
+																											td(align='left', colspan='2')
+																												strong Both these Car Insurance products cover:
+																										
+																												ul.commonrequirements
+																													li The policyholder or the main driver (if the policyholder is not the main driver) who are aged 70 and below, and with at least 2 years&apos; valid driving licence.
+																																		
+																					#standardcar(style='display: none')
+																						span#lblStandardCarDesc
+																							.car_panel
+																								h1     Car Insurance
+																						
+																								img(src='images/car_insurance_qualifying.gif')
+																						
+																								ul.usp
+																									li      Cheapest Insurance in Singapore for Safe Drivers.
+																							
+																									li      Comprehensive or Third Party Plans.
+																							
+																									li      0% Interest Monthly Instalments.
+																						
+																								table.popUpBoaderCommonQualifying
+																									tbody
+																										tr
+																											td
+																												p Based on your answers, we recommend our standard Car Insurance. Great prices, great cover, and great claims service!
+																									
+																											td(align='right', width='250')
+																												input#btnSaveQuotes.proceedstandardcar(onclick='javascript:__OkButton_Clicked();proceedToStandard();', style='padding-right: 7px; padding-left: 7px; overflow: visible', type='button')
+																					
+																							#commonrequirements
+																								table.popUpBoaderCommonQualifying
+																									tbody
+																										tr
+																											td(align='left', colspan='2')
+																												strong Car Insurance covers:
+																										
+																												ul.commonrequirements
+																													li The policyholder or the main driver (if policyholder is not the main driver) who are aged 70 and below, and with at least 2 years&apos; valid driving licence.
+																														
+																			tr
+																				td
+																					table#tblTNC(border='0', cellpadding='0', cellspacing='0', width='90%')
+																						tbody
+																							tr
+																								td
+																																							
+																								td
+																									div
+																										span#TermsConditionsTitle.TermsConditionsTitle
+																											em(style='font-size:11px') Terms and Conditions
+																																											
+																										p
+																											span#lblTermsConditions
+																												em(style='font-size:11px')
+																													| Please note, we are required by law to tell you that
+																													| before we provide cover, you must fully and faithfully tell us everything you know or
+																													| could reasonably be expected to know that is relevant to our decision to give you the insurance,
+																													| otherwise you may receive no benefit from your
+																													| policy or we may cancel your policy and treat it as never having existed.
+																														
+																			tr
+																				td(colspan='1')
+																					span#up
+																						table(style='width: 100%')
+																							tbody
+																								tr(style='vertical-align: middle;')
+																									td(align='left')
+																																										
+																									td(align='right')
+																										#dvNextButton
+																											input#btnNext.buttonNext(type='submit', name='btnNext', value=' ', onclick='s_objectID=\'Motor.QQ.next\';$("#lb_pnlDynamic").html(\'\');__enableAjaxProgressBar();OAA_DoPostBackWithOptions(\'btnNext\',\'btnNext\',false,new WebForm_PostBackOptions(\'btnNext\', \'\', true, \'\', \'\', false, false));return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnNext", "", true, "", "", false, false))', style='display:;')
+																														
+																			tr
+																				td.ParagraphSpace20(colspan='1')
+																									
+																td.gvFrameClearRight
+																							
+															tr
+																td.gvFrameClearBottomLeft
+																									
+																td.gvFrameClearBottom
+																									
+																td.gvFrameClearBottomRight
+																		
+												td
+																		
+												td(valign='top')
+																
+											tr
+												td.ParagraphSpace20(colspan='3')
+																
+											tr
+												td.ParagraphSpace20(colspan='3')
+																
+											tr
+												td(colspan='3')
+													.frameBottomTr
+											
+								td.pageBorderRight(align='right')
+		
+			div(align='center')
+				table#tblFooter(width='970px', cellpadding='0', cellspacing='0', border='0')
+					tbody
+						tr(align='left')
+							td(valign='middle', style='padding-left:5px; white-space:nowrap;')
+								a#CtlFooter_hyHomePage.Footer(href='http://www.directasia.com/', target='_blank') Home
+								
+								
+								
+								a#CtlFooter_hySecurityPrivacy.Footer(href='http://www.directasia.com/sg/en/onlineinsurance/directasia-security-and-privacy/', target='_blank') Security &amp; Privacy
+								
+								a#CtlFooter_hyTC.Footer(href='http://www.directasia.com/sg/en/onlineinsurance/directasia-terms/', target='_blank') Terms &amp; Conditions
+						
+								br
+								
+								span#CtlFooter_lblCopyright.fontNormal10
+									b &copy; Copyright Direct Asia Management Services Pte Ltd(Reg. No: 200822610R)
+								br
+								&nbsp;&nbsp;&nbsp;
+								span#CtlFooter_lblDAMember.fontNormal10
+									| A member of DirectAsia.com group of companies
+									br
+									| &nbsp;&nbsp;&nbsp;
+									strong
+										span(style='font-size:11px') Reinsured by Munich Re, one of the world&apos;s leading reinsurers.
+						
+							td(style='width:135px;', align='Center', valign='middle')
+								table(width='135', border='0', cellpadding='0', cellspacing='0', title='Click to Verify - This site chose VeriSign SSL for secure e-commerce and confidential communications.')
+									tbody
+										tr
+											td(width='135', align='center', valign='top')
+												#verisign
+													a(href='https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.directasia.com&lang=en', target='_blank', title='Click to Verify - This site chose VeriSign SSL for secure e-commerce and confidential communications.')
+														img(src='images/verisign.png', alt='VeriSign')
+												a(href='https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.directasia.com&lang=en', target='_blank', title='Click to Verify - This site chose VeriSign SSL for secure e-commerce and confidential communications.')
+						
+							td(style='width:30%;', align='Left', valign='middle')
+								span#CtlFooter_SmartLabel1.fontNormal10
+									| This site uses VeriSign SSL for secure e-commerce and confidential communications.
+				
+						tr
+							td.ParagraphSpace20(colspan='3')
+				div
+					img#sgfooter(width='901', height='143', src='images/singapore-footer.gif', alt='Singapore Insurance')
+		
+			#pkToolTip(style='width:241px;position:absolute;z-index:9999px;display:none;')
+				table(border='0', cellpadding='0', cellspacing='0')
+					tbody
+						tr
+							td(valign='top', style='width:27px;', align='right')
+								img#CtlToolTip1_imgLeft.png_img(src='images/left_arrow.png', style='height:37px;width:27px;border-width:0px;')
+							
+							td(valign='top', style='width: 214px;')
+								table(border='0', cellpadding='0', cellspacing='0')
+									tbody
+										tr
+											td
+												div
+													img#CtlToolTip1_imgTop.png_img(src='images/top.png', style='height:11px;width:214px;border-width:0px;')
+												
+										tr
+											td
+												.toolTip_conent_con
+													#toolTipConentBg.toolTip_conent_bg
+														img#CtlToolTip1_imgContent.png_img_scale(src='images/content.png', style='height:100%;width:214px;border-width:0px;')
+																		
+													#toolTipContent.toolTip_conent
+												
+										tr
+											td(style='z-index:10;')
+												img#CtlToolTip1_imgBottom.png_img(src='images/bottom.png', style='height:16px;width:214px;border-width:0px;')
+		
+			div(style='display: none')
+				#tooltipDriverAge
+					span#lblDriverAgeHelp
+						| We require the person who uses the car most of the time(main driver) to be 70 years old and below with a valid driving licence of at least 2 years. We are sorry we cannot provide you with a quote online if the main driver does not fulfill the requirements. For assistance, please call us at 666 55555 Mondays to Fridays, 8am to 8pm or Saturdays, 8am to 5pm. We&apos;ll be happy to help.
+				
+				#tooltipDriverExperience
+					span#lblDriverExperienceAgeHelp
+						| We are sorry we cannot insure your car if it is used for transporting people or goods for payment or if your car is being rented out.
+				
+				#tooltipRegisteredCarSG
+					span#lblRegisteredCarSG
+						| Your policy remains valid even if your car has modifications - provided these modifications are LTA compliant and/or approved. Please 
+						a(href='http://www.onemotoring.com.sg/publish/onemotoring/en/lta_information_guidelines/modifications_and_vehoffences/modification_guide.html', target='_blank') click here
+				to check if your modifications are LTA compliant.
+				
+				#tooltipRefusedInsurance
+					span#lblDeclineInsuranceHelp
+						| Our SOS Car Insurance is aimed at drivers who would otherwise be refused insurance or have difficulties renewing their policy.
+				
+				#tooltipFaultClaims
+					span#lblFaultClaims
+						| If you have had 2 or more &apos;at fault&apos; accidents in the past 3 years, we offer our SOS Car Insurance - for those considered &apos;high risk&apos; drivers by other insurance companies.
+				
+				#tooltipLessThan8000km
+					span#lblLessThan8000km
+						| Our Low Mileage Car Insurance product is ideal for drivers who drive less than 8,000km per year.
+				
+				#tooltipLicenseSuspend
+					span#lblLicenseSuspendHelp
+						| We are not able to insure drivers who have had any class of licence suspended or cancelled in the last 5 years.
+				
+				div(style='display: none')
+					#HelpeDirect_Default
+						span#lblHDDefault
+							b Let us tell you more...
+							br
+							br
+							| At DirectAsia.com we do things differently.
+							br
+							br
+					Buying online saves you time and money.
+							br
+							br
+					Getting a quote is easy, let us guide you.
+				
+				div(style='display: none')
+					#HelpDirect_MainDrvAge
+						span#lblHDMainDrv
+							b Let us tell you more...
+							br
+							br
+							| Get a free instant quote on your car insurance.
+							br
+							br
+					Your quote will be saved on our system so you can retrieve it at any time.
+							br
+							br
+					Your quote will be valid for 90 days.
+				
+				div(style='display: none')
+					#HelpDirect_DrvExperience
+						span#lblHDDrvExperience
+							b Let us tell you more...
+							br
+							br
+							| DirectAsia.com supports the latest security measures to protect your information online.
+							br
+							br
+					Your security matters to us.
+				
+				div(style='display: none')
+					#HelpDirect_DrvSuspend
+						span#lblHDDrvSuspend
+							b Let us tell you more...
+							br
+							br
+							| Get the best deal. We ask these questions to make sure we keep your premium down.
+		
+			span#upLowMileAgeProceed
+				input#btnProceedToLowMileage(type='submit', name='btnProceedToLowMileage', value=' ', onclick='OAA_DoPostBackWithOptions(\'btnProceedToLowMileage\',\'btnProceedToLowMileage\',false,new WebForm_PostBackOptions(\'btnProceedToLowMileage\', \'\', true, \'\', \'\', false, false));return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnProceedToLowMileage", "", true, "", "", false, false))', style='display:none;')
+		
+			span#upStandardCar
+				input#btnStandardCar(type='submit', name='btnStandardCar', value=' ', onclick='OAA_DoPostBackWithOptions(\'btnStandardCar\',\'btnStandardCar\',false,new WebForm_PostBackOptions(\'btnStandardCar\', \'\', true, \'\', \'\', false, false));return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnStandardCar", "", true, "", "", false, false))', style='display:none;')
+		
+			span#upSOS
+				input#btnSOS(type='submit', name='btnSOS', value=' ', onclick='OAA_DoPostBackWithOptions(\'btnSOS\',\'btnSOS\',false,new WebForm_PostBackOptions(\'btnSOS\', \'\', true, \'\', \'\', false, false));return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnSOS", "", true, "", "", false, false))', style='display:none;')
+	
+			input#msg_btn(type='submit', name='msg_btn', value='', onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("msg_btn", "", true, "", "", false, false))', style='display:none;visibility:hidden;')
+			#msg_pnl.modalPopupBox(style='display: none; position: absolute; z-index: 100001;')
+				.modalMessageHeader
+					table(width='100%', border='0')
+						tbody
+							tr
+								td(style='padding-left:10px;')
+									span#msglblHeader.Title
+								td(align='right', style='padding:8px 10px 2px 0px;')
+									input.buttonX(type='button', value='X', style='display:none', onclick='__XButton_Clicked();return false;')
+				div(style='padding:10px 10px 5px 10px;')
+					div(style='white-space:normal;')
+						span#msgltMessage.Content
+			
+					#msg__divConfirm(style='text-align:center;padding-top:20px;')
+						table(width='100%', border='0', cellspacing='0', cellpadding='0')
+							tbody
+								tr
+									td(align='right')
+										input.buttonYes(type='button', value='Yes', onclick='__YesButton_Clicked();return false;')
+									td(style='width:5px;') &nbsp;
+									td(align='left')
+										input.buttonNo(type='button', value='No', onclick='__NoButton_Clicked();')
+					#msg__divConfirmOkCancel(style='text-align:center;padding-top:20px;')
+						table(width='100%', border='0', cellspacing='0', cellpadding='0')
+							tbody
+								tr
+									td(align='right')
+										input.buttonYes(type='button', value='Ok', onclick='__YesButton_Clicked();return false;')
+									td(style='width:5px;') &nbsp;
+									td(align='left')
+										input.buttonNo(type='button', value='Cancel', onclick='__NoButton_Clicked();')
+					#msg__divAlert(style='text-align:center;padding-top:20px')
+						center
+							input.buttonOk(type='button', value='Ok', style='width:75px', onclick='__OkButton_Clicked();')
+					#msg__divContinue(style='text-align:center;padding-top:20px')
+						center
+							input.buttonContinue(type='button', value='Continue', onclick='__ContinueButton_Clicked();')
+					.modalErrorCode
+						span#modal_error_code
+			input#lbi_btn(type='submit', name='lbi_btn', value='', onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("lbi_btn", "", true, "", "", false, false))', style='display:none;visibility:hidden;')
+			#lbi_pnl.modalPopupIF(style='display: none; position: absolute; z-index: 100001;')
+				.modalIFHeader
+					table(width='100%', cellspacing='0', cellpadding='0', border='0')
+						tbody
+							tr
+								td.left
+								td.middle
+									#__ifHeaderImgTitle
+								td.middle(align='right')
+									input.buttonX(type='button', onclick="__HideLB_Frame('');return false;")
+								td.right
+				iframe#__iFModal(allowtransparency='true', style='background-color:Transparent;', scrolling='auto', frameborder='0', marginheight='0', marginwidth='0')
+			input#lb_btn(type='submit', name='lb_btn', value='', onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("lb_btn", "", true, "", "", false, false))', style='display:none;visibility:hidden;')
+			#lb_pnl.modalPopupLoading(style='display: none; position: absolute; z-index: 100001;')
+			#lb_pnlDynamic(style='display:none;visibility:hidden;')
+			#lb_pnlDefault(style='display:none;visibility:hidden;')
+				div
+					table(width='100%', border='0', cellpadding='0', cellspacing='0')
+						tbody
+							tr
+								td(align='right')
+									img(src='images/ajax-loader-full.gif')
+								td &nbsp;
+								td(align='left')
+									span.loading DefaultPageLoadingText
+
+			script(type='text/javascript').
+				//<![CDATA[
+					var Page_Validators =  new Array(document.getElementById("rfvQ3"), document.getElementById("cvQ6"), document.getElementById("cvQ5"), document.getElementById("cvQ4"));
+				//]]>
+
+			script(type='text/javascript').
+				//<![CDATA[
+				var rfvQ3 = document.all ? document.all["rfvQ3"] : document.getElementById("rfvQ3");
+				rfvQ3.controltovalidate = "rblQQCarQ3";
+				rfvQ3.focusOnError = "t";
+				rfvQ3.errormessage = "This is a required field.";
+				rfvQ3.display = "None";
+				rfvQ3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+				rfvQ3.initialvalue = "";
+				var cvQ6 = document.all ? document.all["cvQ6"] : document.getElementById("cvQ6");
+				cvQ6.controltovalidate = "rblQQCarQ6";
+				cvQ6.focusOnError = "t";
+				cvQ6.errormessage = "This is a required field.";
+				cvQ6.display = "None";
+				cvQ6.evaluationfunction = "CustomValidatorEvaluateIsValid";
+				cvQ6.clientvalidationfunction = "cvReqQ6";
+				cvQ6.validateemptytext = "true";
+				var cvQ5 = document.all ? document.all["cvQ5"] : document.getElementById("cvQ5");
+				cvQ5.controltovalidate = "rblQQCarQ5";
+				cvQ5.focusOnError = "t";
+				cvQ5.errormessage = "This is a required field.";
+				cvQ5.display = "None";
+				cvQ5.evaluationfunction = "CustomValidatorEvaluateIsValid";
+				cvQ5.clientvalidationfunction = "cvReqQ6";
+				cvQ5.validateemptytext = "true";
+				var cvQ4 = document.all ? document.all["cvQ4"] : document.getElementById("cvQ4");
+				cvQ4.controltovalidate = "rblQQCarQ4";
+				cvQ4.focusOnError = "t";
+				cvQ4.errormessage = "This is a required field.";
+				cvQ4.display = "None";
+				cvQ4.evaluationfunction = "CustomValidatorEvaluateIsValid";
+				cvQ4.clientvalidationfunction = "cvReqQ6";
+				cvQ4.validateemptytext = "true";
+				//]]>
+
+			script(type='text/javascript').
+				//<![CDATA[
+				__noBack();
+				try {
+					OAPageLoad();
+				} catch (err) {}
+				var __callback_LB;
+				var __curMode_LB;
+				var __callBackDelay = 10;
+				var __callBackBtnId;
+				var __countDownTimer = 0;
+				var __countDownMsg;
+				var __countDownTimeoutMsg;
+				var __countDownObj;
+
+				function __KeyDown(event) {
+					if (event.keyCode == 32) {
+						$find("msg_mpeMessage").hide();
+						setTimeout("__evalCallBack_LB()", __callBackDelay);
+					}
+				}
+
+				function __YesButton_Clicked() {
+					$find("msg_mpeMessage").hide();
+					if (__callback_LB && __callback_LB.length > 0) {
+						setTimeout("__evalCallBack_LB()", __callBackDelay);
+					} else {
+						var prm = Sys.WebForms.PageRequestManager.getInstance();
+						prm._doPostBack(__callBackBtnId, '');
+						__callBackBtnId = "";
+					}
+				}
+
+				function __ContinueButton_Clicked() {
+					$find("msg_mpeMessage").hide();
+					__polling('SSU');
+					if (__countDownObj) {
+						clearTimeout(__countDownObj);
+					}
+				}
+
+				function __OkButton_Clicked() {
+					$find("msg_mpeMessage").hide();
+					setTimeout("__evalCallBack_LB()", __callBackDelay);
+				}
+
+				function __XButton_Clicked() {
+					$find("msg_mpeMessage").hide();
+					if (__curMode_LB == 0) {
+						setTimeout("__evalCallBack_LB()", __callBackDelay);
+					} else if (__curMode_LB == 2) {
+						__pollingStart(30000);
+						if (__countDownObj) {
+							clearTimeout(__countDownObj);
+						}
+					}
+				}
+
+				function __evalCallBack_LB() {
+					eval(__callback_LB);
+					__callback_LB = "";
+				}
+
+				function __NoButton_Clicked() {
+					$find("msg_mpeMessage").hide();
+				}
+
+				function ShowMessageLBDelay(title, msg, bid, mode, callback) {
+					ShowMessageLBDelay(title, msg, bid, mode, callback, '');
+				}
+
+				function ShowMessageLBDelay(title, msg, bid, mode, callback, errorCode) {
+					ShowMessageLBDelay(title, msg, bid, mode, callback, errorCode, 360);
+				}
+
+				function ShowMessageLBDelay(title, msg, bid, mode, callback, errorCode, mWidth) {
+					if ($find("msg_mpeMessage")) {
+						ShowMessageLB(title, msg, bid, mode, callback, errorCode, mWidth);
+					} else {
+						setTimeout(function() {
+							ShowMessageLBDelay(title, msg, bid, mode, callback, errorCode, mWidth)
+						}, 100);
+					}
+				}
+
+				function UpdateCountDown() {
+					var tmp = __countDownMsg.replace('[TIMER]', __countDownTimer);
+					$get("msgltMessage").innerHTML = tmp;
+					__countDownTimer--;
+					if (__countDownTimer >= 0) {
+						__countDownObj = setTimeout('UpdateCountDown()', 1000);
+					} else {
+						__curMode_LB = 0;
+						$get("msgltMessage").innerHTML = __countDownTimeoutMsg;
+						$common.setVisible($get("msg__divAlert"), true);
+						$common.setVisible($get("msg__divConfirm"), false);
+						$common.setVisible($get("msg__divConfirmOkCancel"), false);
+						$common.setVisible($get("msg__divContinue"), false);
+					}
+				}
+
+				function ShowMessageLBCountDown(title, msg, tmsg, bid, mode, callback, timer) {
+					if ($find("msg_mpeMessage")) {
+						__countDownTimer = timer;
+						__countDownMsg = msg;
+						__countDownTimeoutMsg = tmsg;
+						var tmp = __countDownMsg.replace('[TIMER]', __countDownTimer);
+						ShowMessageLB(title, tmp, bid, mode, callback);
+						UpdateCountDown();
+					} else {
+						setTimeout(function() {
+							ShowMessageLBCountDown(title, msg, bid, mode, callback, timer)
+						}, 20);
+					}
+				}
+
+				function ShowMessageLB(title, msg, bid, mode, callback) {
+					ShowMessageLB(title, msg, bid, mode, callback, '');
+				}
+
+				function ShowMessageLB(title, msg, bid, mode, callback, errorCode) {
+					ShowMessageLB(title, msg, bid, mode, callback, errorCode, 360);
+				}
+
+				function ShowMessageLB(title, msg, bid, mode, callback, errorCode, mWidth) {
+					__callback_LB = callback;
+					__curMode_LB = mode;
+					__callBackBtnId = bid;
+					$('#msg_pnl').width(mWidth);
+					$get("msglblHeader").innerHTML = title;
+					$get("msgltMessage").innerHTML = msg;
+					if (errorCode) {
+						$get("modal_error_code").innerHTML = errorCode;
+					} else {
+						$get("modal_error_code").innerHTML = '';
+					}
+					if (mode && mode == 1) {
+						$common.setVisible($get("msg__divConfirm"), true);
+						$common.setVisible($get("msg__divConfirmOkCancel"), false);
+						$common.setVisible($get("msg__divAlert"), false);
+						$common.setVisible($get("msg__divContinue"), false);
+					} else if (mode && mode == 2) {
+						$common.setVisible($get("msg__divConfirm"), false);
+						$common.setVisible($get("msg__divConfirmOkCancel"), false);
+						$common.setVisible($get("msg__divAlert"), false);
+						$common.setVisible($get("msg__divContinue"), true);
+					} else if (mode && mode == 4) {
+						$common.setVisible($get("msg__divConfirm"), false);
+						$common.setVisible($get("msg__divConfirmOkCancel"), false);
+						$common.setVisible($get("msg__divAlert"), false);
+						$common.setVisible($get("msg__divContinue"), false);
+					} else if (mode && mode == 5) {
+						$common.setVisible($get("msg__divConfirm"), false);
+						$common.setVisible($get("msg__divConfirmOkCancel"), true);
+						$common.setVisible($get("msg__divAlert"), false);
+						$common.setVisible($get("msg__divContinue"), false);
+					} else {
+						$common.setVisible($get("msg__divAlert"), true);
+						$common.setVisible($get("msg__divConfirmOkCancel"), false);
+						$common.setVisible($get("msg__divConfirm"), false);
+						$common.setVisible($get("msg__divContinue"), false);
+					}
+					$find("msg_mpeMessage").show();
+				}
+
+				function __ShowLB_FrameDelay(clsName, hText, width, height, url) {
+					if ($find("lbi_mpeIframe")) {
+						__ShowLB_Frame(clsName, hText, width, height, url);
+					} else {
+						setTimeout(new function() {
+							__ShowLB_FrameDelay(clsName, hText, width, height, url)
+						}, 100);
+					}
+				}
+
+				function __SetTitle_Frame(hText) {
+					$get("__ifHeaderImgTitle").innerHTML = hText;
+				}
+
+				function __SetClass_Frame(clsName) {
+					$get("__ifHeaderImgTitle").className = clsName;
+				}
+
+				function __ShowLB_Frame(clsName, hText, width, height, url) {
+					var myi = $get("__ifHeaderImgTitle");
+					var myf = $get("__iFModal");
+					var div = $get("lbi_pnl");
+					myi.className = clsName;
+					myi.innerHTML = hText;
+					div.style.width = width;
+					myf.style.width = width;
+					myf.style.height = height;
+					myf.src = url;
+					$find("lbi_mpeIframe").show();
+				}
+
+				function __HideLB_Frame(callbackJs) {
+					$find("lbi_mpeIframe").hide();
+					$get("__iFModal").src = "";
+					if (callbackJs && callbackJs != '') {
+						eval(callbackJs);
+					}
+				}
+				try {
+					HighlightReadonlyTextBox();
+				} catch (err) {}
+				__ServerDate = 'April 08, 2015 12:34:17';
+				__secureLoginUrl = 'https://secure.directasia.com/online-insurance/signin.aspx';
+				if (typeof(Sys) !== 'undefined') {
+					Sys.Browser.WebKit = {};
+					if (navigator.userAgent.indexOf('WebKit/') > -1) {
+						Sys.Browser.agent = Sys.Browser.WebKit;
+						Sys.Browser.version = parseFloat(navigator.userAgent.match(/WebKit\\/ (\d + (\.\d + ) ? ) / )[1]);
+						Sys.Browser.name = 'WebKit';
+					}
+				}
+				showHideAdditionalQuestions('rblQQCarQ3', 'rblQQCarQ6', 'rblQQCarQ5', 'rblQQCarQ4');
+				showHideProductDescription('rblQQCarQ6', 'rblQQCarQ5', 'rblQQCarQ4');
+				s.pageName = 'insurance:car:quotation:qualifying';
+				s.channel = 'insurance';
+				s.prop1 = 'insurance:car';
+				s.hier1 = 'insurance|car|quotation|qualifying';
+				s.prop3 = 'quote:start qualify';
+				s.eVar3 = 'car insurance';
+				s.eVar6 = 'quote:start qualify';
+				s.events = 'event1';
+				s.products = ';car insurance';
+				var s_code = s.t();
+				if (s_code) document.write(s_code);
+				AttachHelpDirectEventSingleToLabel('lblQ1', 'HelpDirect_MainDrvAge', 'HelpDirect_MainDrvAge');
+				AttachHelpDirectEventSingleToLabel('lblQ2', 'HelpDirect_DrvExperience', 'HelpDirect_DrvExperience');
+				AttachHelpDirectEventSingleToLabel('lblQ4', 'HelpDirect_DrvSuspend', 'HelpDirect_DrvSuspend');
+				SetHelpDirectText('HelpeDirect_Default');
+				setTimeout(function() {
+					preloadCssImages.Load();
+				}, 200);
+				WebForm_InitCallback();
+
+				function __polling(message) {
+					var context = 'polling';
+					WebForm_DoCallback('__Page', message, __pollingCallBack, context, __pollingErrorCallBack, true);
+				}
+
+				function __pollingCallBack(returnmessage, context) {
+					if (returnmessage.length > 0) {
+						eval(returnmessage)
+					} else {
+						__pollingStart(240000);
+					}
+				}
+
+				function __pollingErrorCallBack(returnmessage, context) {
+					alert("Callback Error: " + returnmessage + ", " + context);
+				}
+
+				function __pollingStart(timeInterval) {
+					setTimeout("__polling('QUOTE')", timeInterval);
+				}
+				__pollingStart(240000);
+				Sys.Application.add_load(function() {
+					var form = Sys.WebForms.PageRequestManager.getInstance()._form;
+					form._initialAction = form.action = window.location.href;
+				});
+				__InitUdateProgressPanel();
+				var Page_ValidationActive = false;
+				if (typeof(ValidatorOnLoad) == "function") {
+					ValidatorOnLoad();
+				}
+
+				function ValidatorOnSubmit() {
+					if (Page_ValidationActive) {
+						return ValidatorCommonOnSubmit();
+					} else {
+						return true;
+					}
+				}
+
+				function __ShowLBLoading() {
+					var lf = $find("lb_mpeLoading");
+					if (lf) {
+						var __c = $("#lb_pnlDynamic").html();
+						if (__c == "") {
+							__c = $("#lb_pnlDefault").html();
+						}
+						$("#lb_pnl").html(__c);
+						lf.show();
+					}
+				}
+
+				function __HideLBLoading() {
+					var lf = $find("lb_mpeLoading");
+					if (lf) {
+						lf.hide();
+					} else setTimeout(function() {
+						__HideLBLoading();
+					}, 100);
+				}
+				Sys.Net.WebRequestManager.add_invokingRequest(__onInvoke);
+				Sys.Net.WebRequestManager.add_completedRequest(__onComplete);
+				var __loadingDigShowed = false;
+				var __loadingST;
+				var __showAjaxLoading = false;
+
+				function __onInvoke(sender, args) {
+					if (__showAjaxLoading == false) return;
+					__loadingST = setTimeout("__ShowLoadingDig()", 100);
+				}
+
+				function __ShowLoadingDig() {
+					if (!__loadingDigShowed) top.__ShowLBLoading();
+					__loadingDigShowed = true;
+				}
+
+				function __onComplete(sender, args) {
+					__showAjaxLoading = false;
+					if (__loadingDigShowed) top.__HideLBLoading();
+					__loadingDigShowed = false;
+					clearTimeout(__loadingST);
+				}
+
+				function pageUnload() {
+					Sys.Net.WebRequestManager.remove_invokingRequest(__onInvoke);
+					Sys.Net.WebRequestManager.remove_completedRequest(__onComplete);
+				}
+				Sys.Application.initialize();
+				document.getElementById('rfvQ3').dispose = function() {
+					Array.remove(Page_Validators, document.getElementById('rfvQ3'));
+				}
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ValidatorCalloutBehavior, {
+						"ClientStateFieldID": "vceQ3_ClientState",
+						"closeImageUrl": "/online-insurance/WebResource.axd?d=N3S9_nXLDKGJIA38bL52pKGkGHOam6Gso2Q65daGTix_hPm5aN5-Rf73Am6_k4ensoM-GXYbNWGioXKEaPa4TvxX2RNq90Yx0Yhoc0cFYuxrYiG7AU_6b26ruFM6244REPhvMEDULkhIzZDwENDkDfWY9401&t=634191334860000000",
+						"cssClass": "ajaxValidator",
+						"highlightCssClass": "ajaxValidatorHighlight",
+						"id": "vceQ3",
+						"warningIconImageUrl": "/online-insurance/WebResource.axd?d=zrJpeo6GDPHb_LmoHCT7IjRwe2hz7eHN77SO3URsDO3sKbqsVR85txQoyyghhXKFPgbU4HMG1lHdsqZ0UQDtuXDMcDu3j_jH6Z1WILkD3VbwP7bGQBjEX8mrM846dfRFFwclyJR-0xU-lE-bwQLebqGE1Cg1&t=634191334860000000",
+						"width": "230px"
+					}, null, null, $get("rfvQ3"));
+				});
+				document.getElementById('cvQ6').dispose = function() {
+					Array.remove(Page_Validators, document.getElementById('cvQ6'));
+				}
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ValidatorCalloutBehavior, {
+						"ClientStateFieldID": "vceQ6_ClientState",
+						"closeImageUrl": "/online-insurance/WebResource.axd?d=N3S9_nXLDKGJIA38bL52pKGkGHOam6Gso2Q65daGTix_hPm5aN5-Rf73Am6_k4ensoM-GXYbNWGioXKEaPa4TvxX2RNq90Yx0Yhoc0cFYuxrYiG7AU_6b26ruFM6244REPhvMEDULkhIzZDwENDkDfWY9401&t=634191334860000000",
+						"cssClass": "ajaxValidator",
+						"highlightCssClass": "ajaxValidatorHighlight",
+						"id": "vceQ6",
+						"warningIconImageUrl": "/online-insurance/WebResource.axd?d=zrJpeo6GDPHb_LmoHCT7IjRwe2hz7eHN77SO3URsDO3sKbqsVR85txQoyyghhXKFPgbU4HMG1lHdsqZ0UQDtuXDMcDu3j_jH6Z1WILkD3VbwP7bGQBjEX8mrM846dfRFFwclyJR-0xU-lE-bwQLebqGE1Cg1&t=634191334860000000",
+						"width": "230px"
+					}, null, null, $get("cvQ6"));
+				});
+				document.getElementById('cvQ5').dispose = function() {
+					Array.remove(Page_Validators, document.getElementById('cvQ5'));
+				}
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ValidatorCalloutBehavior, {
+						"ClientStateFieldID": "vceQ5_ClientState",
+						"closeImageUrl": "/online-insurance/WebResource.axd?d=N3S9_nXLDKGJIA38bL52pKGkGHOam6Gso2Q65daGTix_hPm5aN5-Rf73Am6_k4ensoM-GXYbNWGioXKEaPa4TvxX2RNq90Yx0Yhoc0cFYuxrYiG7AU_6b26ruFM6244REPhvMEDULkhIzZDwENDkDfWY9401&t=634191334860000000",
+						"cssClass": "ajaxValidator",
+						"highlightCssClass": "ajaxValidatorHighlight",
+						"id": "vceQ5",
+						"warningIconImageUrl": "/online-insurance/WebResource.axd?d=zrJpeo6GDPHb_LmoHCT7IjRwe2hz7eHN77SO3URsDO3sKbqsVR85txQoyyghhXKFPgbU4HMG1lHdsqZ0UQDtuXDMcDu3j_jH6Z1WILkD3VbwP7bGQBjEX8mrM846dfRFFwclyJR-0xU-lE-bwQLebqGE1Cg1&t=634191334860000000",
+						"width": "230px"
+					}, null, null, $get("cvQ5"));
+				});
+				document.getElementById('cvQ4').dispose = function() {
+					Array.remove(Page_Validators, document.getElementById('cvQ4'));
+				}
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ValidatorCalloutBehavior, {
+						"ClientStateFieldID": "vceQ4_ClientState",
+						"closeImageUrl": "/online-insurance/WebResource.axd?d=N3S9_nXLDKGJIA38bL52pKGkGHOam6Gso2Q65daGTix_hPm5aN5-Rf73Am6_k4ensoM-GXYbNWGioXKEaPa4TvxX2RNq90Yx0Yhoc0cFYuxrYiG7AU_6b26ruFM6244REPhvMEDULkhIzZDwENDkDfWY9401&t=634191334860000000",
+						"cssClass": "ajaxValidator",
+						"highlightCssClass": "ajaxValidatorHighlight",
+						"id": "vceQ4",
+						"warningIconImageUrl": "/online-insurance/WebResource.axd?d=zrJpeo6GDPHb_LmoHCT7IjRwe2hz7eHN77SO3URsDO3sKbqsVR85txQoyyghhXKFPgbU4HMG1lHdsqZ0UQDtuXDMcDu3j_jH6Z1WILkD3VbwP7bGQBjEX8mrM846dfRFFwclyJR-0xU-lE-bwQLebqGE1Cg1&t=634191334860000000",
+						"width": "230px"
+					}, null, null, $get("cvQ4"));
+				});
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ModalPopupBehavior, {
+						"BackgroundCssClass": "modalBackground",
+						"PopupControlID": "msg_pnl",
+						"dynamicServicePath": "/online-insurance/Quotation/CarQualifyingQuestions.aspx",
+						"id": "msg_mpeMessage"
+					}, null, null, $get("msg_btn"));
+				});
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ModalPopupBehavior, {
+						"BackgroundCssClass": "modalBackground",
+						"PopupControlID": "lbi_pnl",
+						"dynamicServicePath": "/online-insurance/Quotation/CarQualifyingQuestions.aspx",
+						"id": "lbi_mpeIframe"
+					}, null, null, $get("lbi_btn"));
+				});
+				Sys.Application.add_init(function() {
+					$create(AjaxControlToolkit.ModalPopupBehavior, {
+						"BackgroundCssClass": "modalBackground",
+						"PopupControlID": "lb_pnl",
+						"dynamicServicePath": "/online-insurance/Quotation/CarQualifyingQuestions.aspx",
+						"id": "lb_mpeLoading"
+					}, null, null, $get("lb_btn"));
+				});
+				//]]>
+
+			#msg_mpeMessage_backgroundElement.modalBackground(style='display: none; position: absolute; left: 0px; top: 0px; z-index: 10000;')
+			#lbi_mpeIframe_backgroundElement.modalBackground(style='display: none; position: absolute; left: 0px; top: 0px; z-index: 10000;')
+			#lb_mpeLoading_backgroundElement.modalBackground(style='display: none; position: absolute; left: 0px; top: 0px; z-index: 10000;')
+
+			script(type='text/javascript').
+				AttachToolTipEvent('imgHelpDriverAge','tooltipDriverAge');
+				AttachToolTipEvent('imgHelpDriverExperience','tooltipDriverExperience');
+				AttachToolTipEvent('imgHelpRegisteredCarSG','tooltipRegisteredCarSG');
+				AttachToolTipEvent('imgHelpRefusedInsurance','tooltipRefusedInsurance');
+				AttachToolTipEvent('imgHelpFaultClaims','tooltipFaultClaims');
+				AttachToolTipEvent('imgHelpLessThan8000km','tooltipLessThan8000km');
+				AttachToolTipEvent('imgHelpLicenseSuspend','tooltipLicenseSuspend');
+
+			noscript
+				img(width='1', height='1', style='border: 0', src='https://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;amp;ActivityID=67623&amp;amp;ns=1')
+
+			script(type='text/javascript').
+				if (!window.mstag) mstag = {loadTag : function(){},time : (new Date()).getTime()};
+
+			script#mstag_tops(type='text/javascript', src='scripts/mstag.js')
+			script(type='text/javascript', src='scripts/mstag.1003102000.js')
+			div(style='display: none; visibility: hidden;')
+				img(src='images/btnMyAccount_on.gif')
+				img(src='images/btnMyAccount_Homeon.png')
+				img(src='images/btnMakeClaim_on.gif')
+				img(src='images/btnMakeAClaim_Homeon.png')
+				img(src='images/btnGetInstantQuote_on.gif')
+				img(src='images/btnBuyOnline_Homeon.png')
+				img(src='images/btnTopProduct01_on.gif')
+				img(src='images/btnTopProduct02_on.gif')
+				img(src='images/btnTopProduct03_on.gif')
+				img(src='images/btnTopProduct04_on.gif')
+				img(src='images/btnEditDetail_rollovr.gif')
+				img(src='images/btnAmendMotor_Ovr.gif')
+				img(src='images/btnAmendPA_Ovr.gif')
+				img(src='images/btnAmendTravel_Ovr.gif')
+				img(src='images/btnAmendHome_Ovr.gif')
+				img(src='images/btnRenewMotor_Ovr.gif')
+				img(src='images/btnRenewPA_Ovr.gif')
+				img(src='images/btnRenewTravel_Ovr.gif')
+				img(src='images/btnRenewHome_Ovr.gif')
+				img(src='images/btnDeclineMotor_Ovr.gif')
+				img(src='images/btnDeclinePA_Ovr.gif')
+				img(src='images/btnDeclineTravel_Ovr.gif')
+				img(src='images/btnDeclineHome_Ovr.gif')
+				img(src='images/btnDeferPaymentMotor_Ovr.gif')
+				img(src='images/btnDeferPA.gif')
+				img(src='images/btnDeferPaymentTravel_Ovr.gif')
+				img(src='images/btnDeferPaymentHome_Ovr.gif')
+				img(src='images/btnConfirm_rollovr.gif')
+				img(src='images/btnPrintQuotation_rollovr.gif')
+				img(src='images/btnPAPrintQuotation_rollovr.gif')
+				img(src='images/btnPrint_rollovr.gif')
+				img(src='images/btnCarPrint_rollovr.gif')
+				img(src='images/btnMotorcyclePrint_rollovr.gif')
+				img(src='images/btnPAPrint_rollovr.gif')
+				img(src='images/btnHomePrint_rollovr.gif')
+				img(src='images/btnTravelPrint_rollovr.gif')
+				img(src='images/btnAddNewMember_rollovr.gif')
+				img(src='images/btnOK_On.gif')
+				img(src='images/btnNotNow_On.gif')
+				img(src='images/btnMakeClaim_rollovr.gif')
+				img(src='images/btnUpdatePolicy_rollovr.gif')
+				img(src='images/btnChangeCreditCard_rollovr.gif')
+				img(src='images/btnDownloadPolicyDoc_rollovr.gif')
+				img(src='images/btnPolicies_On.gif')
+				img(src='images/btnQuoteProposal_On.gif')
+				img(src='images/btnRenewInvite_On.gif')
+				img(src='images/btnClaimStatus_On.gif')
+				img(src='images/btnProfileDetail_On.gif')
+				img(src='images/btnTopMenu_Home_rollovr.gif')
+				img(src='images/btnTopMenu_Aboutus_rollovr.gif')
+				img(src='images/btnTopMenu_mediacentre_rollovr.gif')
+				img(src='images/btnTopMenu_gotaquestion_rollovr.gif')
+				img(src='images/btnTopMenu_Product_rollovr.gif')
+				img(src='images/btnTopMenu_yourviews_rollovr.gif')
+				img(src='images/addurtestimonial_on.gif')
+				img(src='images/btnTopProduct01_hover.gif')
+				img(src='images/btnTopProduct02_hover.gif')
+				img(src='images/btnTopProduct03_hover.gif')
+				img(src='images/btnTopProduct04_hover.gif')
+				img(src='images/Dropdown_motor_on.gif')
+				img(src='images/Dropdown_home_on.gif')
+				img(src='images/Dropdown_personalaccidents_on.gif')
+				img(src='images/Dropdown_travel_on.gif')
+				img(src='images/Dropdown_loanprotector_on.gif')
+				img(src='images/btnLoanProtector_on.gif')
+				img(src='images/btnPersonalAccident_on.gif')
+				img(src='images/homepage_banner-05.gif')
+				img(src='images/homepage_banner-06.gif')
+				img(src='images/homepage_banner-07.gif')
+				img(src='images/homepage_banner-08.gif')
+				img(src='images/homepage_banner-09.gif')
+				img(src='images/homepage_banner-10.gif')
+				img(src='images/homepage_banner-11.gif')
+				img(src='images/homepage_banner-12.gif')
+				img(src='images/btnGoBackHome_rollovr.gif')
+				img(src='images/HomeTopMenuHover.gif')
+				img(src='images/ReviewsTopMenuHover.gif')
+
+			script(type='text/javascript').
+				mstag.loadTag("analytics", {dedup:"1",domainId:"2589223",type:"1",revenue:"",actionid:"162447"})
+			script(type='text/javascript', src='scripts/analytics.js')
+
+			noscript
+				iframe(src='https://flex.msn.com/mstag/tag/dd766397-cfed-47a1-829a-66a4b4830345/analytics.html?dedup=1&amp;domainId=2589223&amp;type=1&amp;revenue=&amp;actionid=162447', frameborder='0' scrolling='no' width='1' height='1' style='visibility: hidden; display: none')
+
+			#dot_S4qoPdm2
+				img(src='scripts/coll.aspx', style='width:1px;height:1px;position:absolute;display:block;')
